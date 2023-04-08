@@ -170,8 +170,8 @@
 			<pos>0.5 0.5</pos>
 			<size>1 1</size>
 			<origin>0.5 0.5</origin>
-			<path>./assets/backgrounds/${system.theme}.jpg</path>
-            <default>./assets/backgrounds/${system.theme}.png</default>
+			<path>./assets/backgrounds/${system.theme}.png</path>
+            <default>./assets/backgrounds/${system.theme}.jpg</default>
 			<tile>false</tile>
 			<zIndex>1</zIndex>
         </image>
