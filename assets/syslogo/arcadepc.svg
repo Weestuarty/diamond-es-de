@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 2939 933.2"
+   id="svg207"
+   sodipodi:docname="arcadepc.svg"
+   width="2939"
+   height="933.20001"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs211">
+    <rect
+       x="34.388435"
+       y="40.640881"
+       width="3770.2231"
+       height="856.58472"
+       id="rect444" />
+    <rect
+       x="71.903091"
+       y="75.02932"
+       width="3692.0676"
+       height="787.8078"
+       id="rect438" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview209"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.31987497"
+     inkscape:cx="1680.3441"
+     inkscape:cy="500.19544"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg207" />
+  <text
+     xml:space="preserve"
+     id="text436"
+     style="font-size:13.3333px;font-family:Stencil;-inkscape-font-specification:Stencil;white-space:pre;shape-inside:url(#rect438);fill:#ffffff;stroke:#ffffff;stroke-width:4.03;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke" />
+  <text
+     xml:space="preserve"
+     id="text442"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:'SEGA LOGO FONT';-inkscape-font-specification:'SEGA LOGO FONT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect444);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.03;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+     transform="matrix(34.670408,0,0,53.62343,-1132.4096,-2022.9165)"><tspan
+       x="34.388672"
+       y="53.176825"
+       id="tspan1220">Arcade PC
+</tspan><tspan
+       x="34.388672"
+       y="69.843451"
+       id="tspan1222">
+</tspan></text>
+</svg>
