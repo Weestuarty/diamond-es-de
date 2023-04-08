@@ -8,3 +8,5 @@ Some logotype graphics by Dan Patrick.
 
 ### Theme 'carbon' by Rookervik which was based on simple(c) Nils Bonenberger
 
+#### Massive help on securing and creating assets by Michael Ware aka GreatFlash
+
