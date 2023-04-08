@@ -1,0 +1,1 @@
+Add system specific artwork here in png or jpg format. Ideally you should use images with the same aspect and resolution as your screen, if it doesnt match it will be cropped to fit.

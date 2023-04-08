@@ -1,0 +1,93 @@
+<theme>
+    <colorScheme name="1">
+        <variables>
+                <colorSchemeName>Yellow</colorSchemeName>
+                <backgroundColor>000000</backgroundColor>
+                <carColor>DDAA00</carColor>
+                <firstColor>c49102</firstColor>
+                <secondColor>111111</secondColor>
+                <mainFontColor>FFFFFF</mainFontColor>
+                <selectColor>d4af3f</selectColor>
+                <helpColor>ffffff</helpColor>
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="2">
+        <variables>
+                <colorSchemeName>Red</colorSchemeName>
+                <backgroundColor>c59a6f</backgroundColor>
+                <carColor>561420</carColor>
+                <firstColor>561420</firstColor>
+                <secondColor>c59a6f</secondColor>
+                <mainFontColor>c59a6f</mainFontColor>
+                <selectColor>af2941</selectColor>
+                <helpColor>c59a6f</helpColor>
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="3">
+        <variables>
+                <colorSchemeName>Green</colorSchemeName>
+                <backgroundColor>ce9b58</backgroundColor>
+                <carColor>1c4a26</carColor>
+                <firstColor>1c4a26</firstColor>
+                <secondColor>ce9b58</secondColor>
+                <mainFontColor>ce9b58</mainFontColor>
+                <selectColor>43b05a</selectColor>            
+                <helpColor>ce9b58</helpColor>         
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="4">
+        <variables>
+                <colorSchemeName>Blue</colorSchemeName>
+                <backgroundColor>DDDDDD</backgroundColor>
+                <carColor>1167b1</carColor>
+                <firstColor>0000FF</firstColor>
+                <secondColor>DDDDDD</secondColor>
+                <mainFontColor>FFFFFF</mainFontColor>
+                <selectColor>0000FF</selectColor>
+                <helpColor>DDDDDD</helpColor>       
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="5">
+        <variables>
+                <colorSchemeName>Black/Blue</colorSchemeName>
+                <backgroundColor>111111</backgroundColor>
+                <carColor>003166</carColor>
+                <gridColor>0053ac</gridColor>
+                <firstColor>000022</firstColor>
+                <secondColor>4d4DFF</secondColor>
+                <mainFontColor>FFFFFF</mainFontColor>
+                <selectColor>0053ac</selectColor>
+                <helpColor>DDDDDD</helpColor>
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="6">
+        <variables>
+                <colorSchemeName>Purple</colorSchemeName>
+                <backgroundColor>000000</backgroundColor>
+                <carColor>7434a4</carColor>
+                <firstColor>3c2268</firstColor>
+                <secondColor>DDDDDD</secondColor>
+                <mainFontColor>FFFFFF</mainFontColor>
+                <selectColor>7744cf</selectColor>
+                <helpColor>ffffff</helpColor>
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="7">
+        <variables>
+                <colorSchemeName></colorSchemeName>
+                <backgroundColor>111111</backgroundColor>
+                <carColor>333333</carColor>
+                <firstColor>000000</firstColor>
+                <secondColor>FFFFFF</secondColor>
+                <mainFontColor>FFFFFF</mainFontColor>
+                <selectColor>808080</selectColor>
+                <helpColor>DDDDDD</helpColor>
+        </variables>
+    </colorScheme>
+</theme>

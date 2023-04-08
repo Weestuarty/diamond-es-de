@@ -1,0 +1,769 @@
+<!--
+    KoFE for EmulationStation Desktop Edition
+    Author: Stuart Learmonth
+    License: Creative Commons CC-BY-NC-SA
+-->
+
+<theme>
+
+    <include>./colors.xml</include>
+    <include>./metadata-global/${system.theme}.xml</include>
+
+
+    <aspectRatio name="4:3">
+        <include>./4-3.xml</include>
+    </aspectRatio>
+
+    <aspectRatio name="16:10">
+        <include>./16-10.xml</include>
+    </aspectRatio>
+
+    <aspectRatio name="21:9">
+        <include>./21-9.xml</include>
+    </aspectRatio>
+
+
+    <variables>
+        <mainFont>./assets/fonts/bold.ttf</mainFont>
+        <mainFontSize>0.025</mainFontSize>
+        <secondFont>./assets/fonts/bold.ttf</secondFont>
+        <helpFont>./assets/fonts/cabin.ttf</helpFont>
+        <helpFontSize>0.025</helpFontSize>
+    </variables>
+
+    <view name="system">
+        <carousel name="system_carousel">
+            <pos>0.5 0.5</pos>
+            <size>1 0.22</size>
+            <origin>0.5 0.5</origin>
+            <type>horizontal</type>
+            <maxItemCount>3</maxItemCount>
+            <itemSize>0.225 0.125</itemSize>
+            <itemScale>1.2</itemScale>
+            <selectedItemMargins>0.025 0.025</selectedItemMargins>
+            <imageInterpolation>linear</imageInterpolation>
+            <unfocusedItemOpacity>1</unfocusedItemOpacity>
+            <unfocusedItemSaturation>0.5</unfocusedItemSaturation>
+            <color>00000000</color>
+            <text>${system.fullName}</text>
+            <textColor>${mainFontColor}</textColor>
+            <fontPath>${mainFont}</fontPath>
+            <fontSize>${mainFontSize}</fontSize>
+            <letterCase>uppercase</letterCase>
+            <lineSpacing>1.2</lineSpacing>
+            <zIndex>29</zIndex>
+        </carousel>
+        <image name="carback">
+			<pos>0.5 0.5</pos>
+			<size>1 0.22</size>
+			<origin>0.5 0.5</origin>
+			<path>./assets/images/background.png</path>
+            <color>${firstColor}99</color>
+            <brightness>-2.5</brightness>
+			<tile>false</tile>
+			<zIndex>28</zIndex>
+        </image>
+        <image name="systemcar fade">
+			<pos>0.5 0.39</pos>
+			<size>1 0.0075 </size>
+			<origin>0.5 0</origin>
+			<path>./assets/images/background.png</path>
+            <color>${carColor}</color>
+            <brightness>2.5</brightness>
+			<tile>false</tile>
+			<zIndex>30</zIndex>
+        </image>
+        <image name="systemcar fadebot">
+			<pos>0.5 0.605</pos>
+			<size>1 0.0075</size>
+			<origin>0.5 0</origin>
+			<path>./assets/images/background.png</path>
+            <color>${carColor}</color>
+            <brightness>2.5</brightness>
+			<tile>false</tile>
+			<zIndex>30</zIndex>
+        </image>
+        
+        
+        
+        <text name="sysname">
+			<pos>0.025 0.03</pos>
+			<origin>0 0</origin>
+			<size>0.5 0.075</size>
+            <systemdata>fullname</systemdata>
+			<fontPath>${secondFont}</fontPath>
+			<fontSize>0.06</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>${mainFontColor}</color>
+            <zIndex>15</zIndex>
+		</text>
+        <text name="sysman">
+			<pos>0.025 0.09</pos>
+			<origin>0 0</origin>
+			<size>0.5 0.06</size>
+            <text>${systemManufacturer}</text>			
+			<fontPath>${secondFont}</fontPath>
+			<fontSize>0.025</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>${mainFontColor}</color>
+            <zIndex>15</zIndex>
+		</text>
+        <text name="sysrel">
+			<pos>0.025 0.125</pos>
+			<origin>0 0</origin>
+			<size>0.5 0.06</size>
+            <text>${systemReleaseYear}</text>
+			<fontPath>${secondFont}</fontPath>
+			<fontSize>0.025</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>${mainFontColor}</color>
+            <zIndex>15</zIndex>
+		</text>
+        
+       
+        <text name="gamecount">
+			<pos>0.95 0.965</pos>
+			<origin>1 0.5</origin>
+			<size>0.25 0.06</size>
+            <systemdata>gamecount</systemdata>
+            <defaultValue>:space:</defaultValue>
+			<fontPath>${helpFont}</fontPath>
+			<fontSize>0.025</fontSize>
+			<horizontalAlignment>center</horizontalAlignment>
+            <letterCase>uppercase</letterCase>
+			<color>${helpColor}</color>
+            <zIndex>15</zIndex>
+		</text>
+       
+    </view>
+
+    <view name="system, gamelist">
+        <helpsystem name="help">
+            <pos>0.025 0.965</pos>
+            <origin>0 0.5</origin>
+            <fontPath>${helpFont}</fontPath>
+            <textColor>${helpColor}</textColor>
+            <iconColor>${selectColor}</iconColor>
+            <fontSize>${helpFontSize}</fontSize>
+        </helpsystem>
+        <image name="helpbar1">
+			<pos>0.5 0.93</pos>
+			<size>1 0.0075</size>
+			<origin>0.5 0</origin>
+			<path>./assets/images/background.png</path>
+            <color>${carColor}</color>
+            <brightness>2.5</brightness>
+			<tile>false</tile>
+			<zIndex>30</zIndex>
+        </image>
+        <image name="helpbar2">
+			<pos>0.5 1</pos>
+			<size>1 0.07</size>
+			<origin>0.5 1</origin>
+			<path>./assets/images/background.png</path>
+            <color>${firstColor}</color>
+            <brightness>-2.5</brightness>
+			<tile>false</tile>
+			<zIndex>14</zIndex>
+        </image>
+        <image name="backart">
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<origin>0.5 0.5</origin>
+			<path>./assets/backgrounds/${system.theme}.jpg</path>
+            <default>./assets/backgrounds/${system.theme}.png</default>
+			<tile>false</tile>
+			<zIndex>1</zIndex>
+        </image>
+    </view>
+
+    <view name="gamelist">
+        
+    <image name="backgroundoverlay">
+        <pos>0.5 0.5</pos>
+        <size>1 1</size>
+        <origin>0.5 0.5</origin>
+        <path>./assets/images/background.png</path>
+        <color>${firstColor}bb</color>
+        <brightness>-2.5</brightness>
+        <tile>false</tile>
+        <zIndex>2</zIndex>
+    </image>
+        <image name="topbar1">
+			<pos>0.5 0.15</pos>
+			<size>1 0.0075</size>
+			<origin>0.5 0</origin>
+			<path>./assets/images/background.png</path>
+            <color>${carColor}</color>
+            <brightness>2.5</brightness>
+			<tile>false</tile>
+			<zIndex>30</zIndex>
+        </image>
+        <image name="topbar2">
+			<pos>0.5 0</pos>
+			<size>1 0.15</size>
+			<origin>0.5 0</origin>
+			<path>./assets/images/background.png</path>
+            <color>${firstColor}</color>
+            <brightness>-2.5</brightness>
+			<tile>false</tile>
+			<zIndex>14</zIndex>
+        </image>
+        <image name="sidebar1">
+			<pos>0.95 0.15</pos>
+			<size>0.005 0.78</size>
+			<origin>0 0</origin>
+			<path>./assets/images/background.png</path>
+            <color>${carColor}</color>
+            <brightness>2.5</brightness>
+			<tile>false</tile>
+			<zIndex>30</zIndex>
+        </image>
+        
+        <image name="sidebar2">
+			<pos>0.95 0.15</pos>
+			<size>0.05 0.78</size>
+			<origin>0 0</origin>
+			<path>./assets/images/background.png</path>
+            <color>${firstColor}</color>
+            <brightness>-2.5</brightness>
+			<tile>false</tile>
+			<zIndex>14</zIndex>
+        </image>
+       
+
+        
+        
+        <text name="players1">
+            <metadata>players</metadata>
+            <fontPath>./assets/fonts/players.ttf</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>${mainFontColor}</color>
+            <letterCase>capitalize</letterCase>
+            <horizontalAlignment>left</horizontalAlignment>
+            <lineSpacing>0.95</lineSpacing>
+            <pos>0.98 0.37</pos>
+            <size>0.03 0.1</size>
+            <origin>0.5 0</origin>
+        </text>
+        
+        <datetime name="release1">
+            <metadata>releasedate</metadata>
+            <fontPath>${mainFont}</fontPath>
+            <format>%Y</format>
+            <rotation>-90</rotation>
+            <fontSize>0.04</fontSize>
+            <color>${mainFontColor}</color>
+            <letterCase>capitalize</letterCase>
+            <horizontalAlignment>left</horizontalAlignment>
+            <lineSpacing>0.95</lineSpacing>
+            <pos>0.98 0.9</pos>
+            <size>0.05 0.06</size>
+            <origin>0.5 1</origin>
+        </datetime>
+        
+        
+        <rating name="rating">
+            <pos>0.9225 0.25</pos>
+            <size>0.08 0.04</size>
+            <rotation>-90</rotation>
+            <interpolation>nearest</interpolation>
+            <color>${mainFontColor}</color>
+            <filledPath>./assets/images/rating_filled.svg</filledPath>
+            <unfilledPath>./assets/images/rating_empty.svg</unfilledPath>
+        </rating>
+        
+        <text name="collectionsSystemName">
+            <pos>0.5 0.135</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.11</size>
+            <systemNameSuffix>true</systemNameSuffix>
+            <fontPath>${mainFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <horizontalAlignment>center</horizontalAlignment>
+            <color>${mainFontColor}</color>
+            <zIndex>50</zIndex>
+        </text>
+        <badges name="all">
+            <pos>0.9525 0.475</pos>
+            <size>0.05 .35</size>
+            <direction>column</direction>
+            <lines>1</lines>
+            <itemsPerLine>5</itemsPerLine>
+            <slots>completed, favorite, altemulator, kidgame,controller</slots>
+            <controllerPos>0.5 0.575</controllerPos>
+            <controllerSize>0.85</controllerSize>
+            <folderLinkSize>0.85 0.9</folderLinkSize>
+            <folderLinkPos>0.47 0.48</folderLinkPos>
+            <folderLinkIconColor>${backgroundColor}55</folderLinkIconColor>
+            <customFolderLinkIcon>./assets/badges/link.png</customFolderLinkIcon>
+            <badgeIconColor>${mainFontColor}DD</badgeIconColor>
+            <horizontalAlignment>center</horizontalAlignment>
+            <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
+            <customBadgeIcon badge="collection">./assets/badges/collection.svg</customBadgeIcon>
+            <customBadgeIcon badge="altemulator">./assets/badges/alt.svg</customBadgeIcon>
+            <customBadgeIcon badge="favorite">./assets/badges/fave.svg</customBadgeIcon>
+            <customBadgeIcon badge="completed">./assets/badges/complete.svg</customBadgeIcon>
+            <customBadgeIcon badge="controller">./assets/badges/control.svg</customBadgeIcon>
+        </badges>
+    </view>
+
+    <variant name="solidgrid">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
+                
+                <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
+                <imageColor>${mainFontColor}AA</imageColor>
+                <imageSelectedColor>${mainFontColor}</imageSelectedColor>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <grid name="sysgrid">
+                <pos>0.505 0.565</pos>
+                <size>1 0.81</size>
+                <origin>0.5 0.5</origin>
+                <itemSize>0.23 0.32</itemSize>
+                <itemScale>1.1</itemScale>
+                <imageType>miximage</imageType>
+                <itemSpacing>0 0.15</itemSpacing>
+                <selectorImage>./assets/images/gridsel.svg</selectorImage>
+                <selectorColor>${selectColor}cc</selectorColor>
+                <selectorLayer>bottom</selectorLayer>
+                <zIndex>10</zIndex>
+                <rowTransitions>instant</rowTransitions>
+            </grid>
+            
+            <image name="Syslogo">
+                <path>./assets/syslogo/${system.theme}.svg</path>
+                <default>./assets/syslogo/${system.theme}.png</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <color>${mainFontColor}</color>
+                <zIndex>50</zIndex>
+            </image>
+            <text name="gamename">
+                <metadata>name</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.065</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <systemNameSuffix>false</systemNameSuffix>
+                <horizontalAlignment>center</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.48 0.545</pos>
+                <size>0.85 0.09</size>
+                <origin>0.5 0.5</origin>
+            </text>
+        </view>
+    </variant>
+
+    <variant name="solidtext">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
+                
+                <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
+                <imageColor>${secondColor}</imageColor>
+                <imageSelectedColor>${secondColor}</imageSelectedColor>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <textlist name="gamelist_textlist">
+                <pos>0.01 0.16</pos>
+                <size>0.49 0.77</size>
+                <selectorColor>00000000</selectorColor>
+                <selectedColor>${selectColor}</selectedColor>
+                <primaryColor>${mainFontColor}</primaryColor>
+                <secondaryColor>${mainFontColor}</secondaryColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <horizontalMargin>0</horizontalMargin>
+                <letterCase>uppercase</letterCase>
+                <indicators>symbols</indicators>
+                <collectionIndicators>symbols</collectionIndicators>
+        </textlist>
+            <text name="description1">
+                <size>0.41 0.2</size>
+                <metadata>description</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <lineSpacing>1</lineSpacing>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>${mainFontColor}</color>
+                <pos>0.52 0.65</pos>
+                <origin>0 0</origin>
+            </text>
+            
+            <image name="midbar1">
+                <pos>0.5 0.17</pos>
+                <size>0.003 0.74</size>
+                <origin>0 0</origin>
+                <path>./assets/images/background.png</path>
+                <color>${carColor}66</color>
+                <brightness>2.5</brightness>
+                <tile>false</tile>
+                <zIndex>30</zIndex>
+            </image>
+            <text name="publisher1">
+                <metadata>publisher</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>left</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.51 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>0 0</origin>
+            </text>
+           
+            <text name="developer1">
+                <metadata>developer</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>right</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.94 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>1 0</origin>
+            </text>
+            <video name="gamedisplay">
+                <imageType>image</imageType>
+                <maxSize>0.4 0.475</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.7275 0.4</pos>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>20</zIndex>
+            </video>
+            <image name="Syslogo">
+                <path>./assets/syslogo/${system.theme}.svg</path>
+                <default>./assets/syslogo/${system.theme}.png</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <color>${mainFontColor}</color>
+                <zIndex>50</zIndex>
+            </image>
+        </view>
+    </variant>
+
+    <variant name="colorgrid">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
+                <defaultImage>./assets/syslogocolor/${system.theme}.png</defaultImage>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <grid name="sysgrid">
+                <pos>0.505 0.565</pos>
+                <size>1 0.81</size>
+                <origin>0.5 0.5</origin>
+                <itemSize>0.23 0.32</itemSize>
+                <itemScale>1.1</itemScale>
+                <imageType>miximage</imageType>
+                <itemSpacing>0 0.15</itemSpacing>
+                <selectorImage>./assets/images/gridsel.svg</selectorImage>
+                <selectorColor>${selectColor}cc</selectorColor>
+                <selectorLayer>bottom</selectorLayer>
+                <zIndex>10</zIndex>
+                <rowTransitions>instant</rowTransitions>
+            </grid>
+            <text name="gamename">
+                <metadata>name</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.065</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <systemNameSuffix>false</systemNameSuffix>
+                <horizontalAlignment>center</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.48 0.545</pos>
+                <size>0.85 0.09</size>
+                <origin>0.5 0.5</origin>
+            </text>
+           
+            <image name="Syslogo">
+                <path>./assets/syslogocolor/${system.theme}.svg</path>
+                <default>./assets/syslogocolor/${system.theme}.png</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <zIndex>50</zIndex>
+            </image>
+        </view>
+    </variant>
+
+    <variant name="colortext">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
+                <defaultImage>./assets/syslogocolor/${system.theme}.png</defaultImage>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <textlist name="gamelist_textlist">
+                <pos>0.01 0.16</pos>
+                <size>0.49 0.77</size>
+                <selectorColor>00000000</selectorColor>
+                <selectedColor>${selectColor}</selectedColor>
+                <primaryColor>${mainFontColor}</primaryColor>
+                <secondaryColor>${mainFontColor}</secondaryColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <horizontalMargin>0</horizontalMargin>
+                <letterCase>uppercase</letterCase>
+                <indicators>symbols</indicators>
+                <collectionIndicators>symbols</collectionIndicators>
+        </textlist>
+            <text name="description1">
+                <size>0.41 0.2</size>
+                <metadata>description</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <lineSpacing>1</lineSpacing>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>${mainFontColor}</color>
+                <pos>0.52 0.65</pos>
+                <origin>0 0</origin>
+            </text>
+            
+            <image name="midbar1">
+                <pos>0.5 0.17</pos>
+                <size>0.003 0.74</size>
+                <origin>0 0</origin>
+                <path>./assets/images/background.png</path>
+                <color>${carColor}66</color>
+                <brightness>2.5</brightness>
+                <tile>false</tile>
+                <zIndex>30</zIndex>
+            </image>
+            <text name="publisher1">
+                <metadata>publisher</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>left</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.51 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>0 0</origin>
+            </text>
+           
+            <text name="developer1">
+                <metadata>developer</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>right</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.94 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>1 0</origin>
+            </text>
+            <video name="gamedisplay">
+                <imageType>image</imageType>
+                <maxSize>0.4 0.475</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.7275 0.4</pos>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>20</zIndex>
+            </video>
+            <image name="Syslogo">
+                <path>./assets/syslogocolor/${system.theme}.svg</path>
+                <default>./assets/syslogocolor/${system.theme}.png</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <zIndex>50</zIndex>
+            </image>
+        </view>
+    </variant>
+    <variant name="solidvid">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
+                
+                <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
+                <imageColor>${secondColor}</imageColor>
+                <imageSelectedColor>${secondColor}</imageSelectedColor>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <textlist name="gamelist_textlist">
+                <pos>0.01 0.16</pos>
+                <size>0.49 0.77</size>
+                <selectorColor>00000000</selectorColor>
+                <selectedColor>${selectColor}</selectedColor>
+                <primaryColor>${mainFontColor}</primaryColor>
+                <secondaryColor>${mainFontColor}</secondaryColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <horizontalMargin>0</horizontalMargin>
+                <letterCase>uppercase</letterCase>
+                <indicators>symbols</indicators>
+                <collectionIndicators>symbols</collectionIndicators>
+        </textlist>
+            
+           
+            <image name="midbar1">
+                <pos>0.5 0.17</pos>
+                <size>0.003 0.74</size>
+                <origin>0 0</origin>
+                <path>./assets/images/background.png</path>
+                <color>${carColor}66</color>
+                <brightness>2.5</brightness>
+                <tile>false</tile>
+                <zIndex>30</zIndex>
+            </image>
+            <text name="publisher1">
+                <metadata>publisher</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>left</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.51 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>0 0</origin>
+            </text>
+           
+            <text name="developer1">
+                <metadata>developer</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>right</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.94 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>1 0</origin>
+            </text>
+            <video name="gamedisplay">
+                <imageType>image</imageType>
+                <maxSize>0.44 0.475</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.7275 0.625</pos>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>20</zIndex>
+            </video>
+            <image name="marquee">
+            <imageType>marquee</imageType>
+                <maxSize>0.35 0.22</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.7275 0.27</pos>
+                <zIndex>20</zIndex>
+            </image>
+            <image name="Syslogo">
+                <path>./assets/syslogo/${system.theme}.svg</path>
+                <default>./assets/syslogo/${system.theme}.png</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <color>${mainFontColor}</color>
+                <zIndex>50</zIndex>
+            </image>
+        </view>
+    </variant>
+    <variant name="colorvid">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
+                <defaultImage>./assets/syslogocolor/${system.theme}.png</defaultImage>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <textlist name="gamelist_textlist">
+                <pos>0.01 0.16</pos>
+                <size>0.49 0.77</size>
+                <selectorColor>00000000</selectorColor>
+                <selectedColor>${selectColor}</selectedColor>
+                <primaryColor>${mainFontColor}</primaryColor>
+                <secondaryColor>${mainFontColor}</secondaryColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <horizontalMargin>0</horizontalMargin>
+                <letterCase>uppercase</letterCase>
+                <indicators>symbols</indicators>
+                <collectionIndicators>symbols</collectionIndicators>
+        </textlist>
+            
+            
+            <image name="midbar1">
+                <pos>0.5 0.17</pos>
+                <size>0.003 0.74</size>
+                <origin>0 0</origin>
+                <path>./assets/images/background.png</path>
+                <color>${carColor}66</color>
+                <brightness>2.5</brightness>
+                <tile>false</tile>
+                <zIndex>30</zIndex>
+            </image>
+            <text name="publisher1">
+                <metadata>publisher</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>left</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.51 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>0 0</origin>
+            </text>
+           
+            <text name="developer1">
+                <metadata>developer</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <horizontalAlignment>right</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.94 0.86</pos>
+                <size>0.2 0.06</size>
+                <origin>1 0</origin>
+            </text>
+            <video name="gamedisplay">
+                <imageType>image</imageType>
+                <maxSize>0.44 0.475</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.7275 0.625</pos>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>20</zIndex>
+            </video>
+            <image name="marquee">
+            <imageType>marquee</imageType>
+                <maxSize>0.35 0.22</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.7275 0.27</pos>
+                <zIndex>20</zIndex>
+            </image>
+            <image name="Syslogo">
+                <path>./assets/syslogocolor/${system.theme}.svg</path>
+                <default>./assets/syslogocolor/${system.theme}.png</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <zIndex>50</zIndex>
+            </image>
+        </view>
+    </variant>
+
+</theme>

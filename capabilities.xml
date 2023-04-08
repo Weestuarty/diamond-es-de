@@ -1,0 +1,89 @@
+<!--
+    Theme capabilities for elegance-es-de
+-->
+
+<themeCapabilities>
+
+    <aspectRatio>16:9</aspectRatio>
+    <aspectRatio>4:3</aspectRatio>
+    <aspectRatio>16:10</aspectRatio>
+    <aspectRatio>21:9</aspectRatio>
+
+    <suppressTransitionProfiles>
+        <entry>builtin-instant</entry>
+        <entry>builtin-slide</entry>
+        <entry>builtin-fade</entry>
+    </suppressTransitionProfiles>
+
+    <transitions name="instantfade">
+        <label>Instant w/Fade</label>
+        <selectable>true</selectable>
+        <systemToSystem>instant</systemToSystem>
+        <systemToGamelist>fade</systemToGamelist>
+        <gamelistToGamelist>instant</gamelistToGamelist>
+        <gamelistToSystem>fade</gamelistToSystem>
+        <startupToSystem>slide</startupToSystem>
+        <startupToGamelist>slide</startupToGamelist>
+    </transitions>
+    <transitions name="instant">
+        <label>Instant</label>
+        <selectable>true</selectable>
+        <systemToSystem>instant</systemToSystem>
+        <systemToGamelist>instant</systemToGamelist>
+        <gamelistToGamelist>instant</gamelistToGamelist>
+        <gamelistToSystem>instant</gamelistToSystem>
+        <startupToSystem>instant</startupToSystem>
+        <startupToGamelist>instant</startupToGamelist>
+    </transitions>
+
+    <themeName>carbon</themeName>
+
+    <colorScheme name="5">
+        <label>Blue dark</label>
+    </colorScheme>
+    <colorScheme name="1">
+        <label>Yellow</label>
+    </colorScheme>
+    <colorScheme name="2">
+        <label>Classy</label>
+    </colorScheme>
+    <colorScheme name="3">
+        <label>Hyrule</label>
+    </colorScheme>
+    <colorScheme name="4">
+        <label>Blue light</label>
+    </colorScheme>
+    
+    <colorScheme name="6">
+        <label>Purple</label>
+    </colorScheme>
+    <colorScheme name="7">
+        <label>Greyscale</label>
+    </colorScheme>
+
+
+    <variant name="solidgrid">
+        <label>Solid w/ grid gameslist</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="solidtext">
+        <label>Solid w/ text gamelist</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="colorgrid">
+        <label>Color w/ grid gamelist</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="colortext">
+        <label>Color w/ text gamelist</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="solidvid">
+        <label>Solid w/ text alt</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="colorvid">
+        <label>Color w/ tex alt</label>
+        <selectable>true</selectable>
+    </variant>
+</themeCapabilities>

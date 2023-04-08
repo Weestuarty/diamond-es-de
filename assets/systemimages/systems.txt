@@ -1,0 +1,91 @@
+
+ags: Adventure Game Studio Game Engine
+
+amiga1200: Commodore Amiga 1200
+amiga600: Commodore Amiga 600
+
+arduboy: Arduboy Miniature Game System
+
+atomiswave: Sammy Corporation Atomiswave
+bbcmicro: Acorn Computers BBC Micro
+
+cavestory: Cave Story (NXEngine)
+
+chailove: ChaiLove Game Engine
+
+cps: Capcom Play System
+cps1: Capcom Play System I
+cps2: Capcom Play System II
+cps3: Capcom Play System III
+
+daphne: Daphne Arcade LaserDisc Emulator
+
+doom: Doom
+dos: DOS (PC)
+easyrpg: EasyRPG Game Engine
+epic: Epic Games Store
+famicom: Nintendo Family Computer
+fba: FinalBurn Alpha
+fbneo: FinalBurn Neo
+
+flash: Adobe Flash
+
+
+j2me: Java 2 Micro Edition (J2ME)
+kodi: Kodi Home Theatre Software
+lcdgames: LCD Handheld Games
+lutris: Lutris Open Gaming Platform
+lutro: Lutro Game Engine
+macintosh: Apple Macintosh
+mame: Multiple Arcade Machine Emulator
+mame-advmame: AdvanceMAME
+mame-mame4all: MAME4ALL
+megacd: Sega Mega-CD
+megacdjp: Sega Mega-CD
+
+mess: Multi Emulator Super System
+model2: Sega Model 2
+model3: Sega Model 3
+moonlight: Moonlight Game Streaming
+moto: Thomson MO/TO Series
+
+msx1: MSX1
+msx2: MSX2
+msxturbor: MSX Turbo R
+mugen: M.U.G.E.N Game Engine
+
+naomi: Sega NAOMI
+naomigd: Sega NAOMI GD-ROM
+
+neogeocdjp: SNK Neo Geo CD
+
+openbor: OpenBOR Game Engine
+
+palm: Palm OS
+pc: IBM PC
+
+pico8: PICO-8 Fantasy Console
+ports: Ports
+
+quake: Quake
+saturnjp: Sega Saturn
+scummvm: ScummVM Game Engine
+
+sgb: Nintendo Super Game Boy
+snes: Nintendo SNES (Super Nintendo)
+
+solarus: Solarus Game Engine
+spectravideo: Spectravideo
+steam: Valve Steam
+stratagus: Stratagus Game Engine
+
+tanodragon: Tano Dragon
+
+tic80: TIC-80 Game Engine
+to8: Thomson TO8
+
+uzebox: Uzebox Open Source Console
+
+
+wasm4: WASM-4 Fantasy Console
+zmachine: Infocom Z-machine

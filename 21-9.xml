@@ -1,0 +1,56 @@
+<theme>
+    <view name="system">
+        
+    </view>
+
+    <view name="gamelist">
+        <text name="players1">
+            <metadata>players</metadata>
+            <fontPath>./assets/fonts/players.ttf</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>${mainFontColor}</color>
+            <letterCase>capitalize</letterCase>
+            <horizontalAlignment>left</horizontalAlignment>
+            <lineSpacing>0.95</lineSpacing>
+            <pos>0.986 0.36</pos>
+            <size>0.04 0.12</size>
+            <origin>0.5 0</origin>
+        </text>
+        
+        <datetime name="release1">
+            <metadata>releasedate</metadata>
+            <fontPath>${mainFont}</fontPath>
+            <format>%Y</format>
+            <rotation>-90</rotation>
+            <fontSize>0.04</fontSize>
+            <color>${mainFontColor}</color>
+            <letterCase>capitalize</letterCase>
+            <horizontalAlignment>left</horizontalAlignment>
+            <lineSpacing>0.95</lineSpacing>
+            <pos>0.98 0.88</pos>
+            <size>0.05 0.06</size>
+            <origin>0.5 1</origin>
+        </datetime>
+        
+        
+        <rating name="rating">
+            <pos>0.9325 0.25</pos>
+            <size>0.08 0.04</size>
+            <rotation>-90</rotation>
+            <interpolation>nearest</interpolation>
+            <color>${mainFontColor}</color>
+            <filledPath>./assets/images/rating_filled.svg</filledPath>
+            <unfilledPath>./assets/images/rating_empty.svg</unfilledPath>
+        </rating>
+    </view>
+    <variant name="solidgrid, colorgrid">
+      
+        <view name="gamelist">
+            <grid name="sysgrid">
+                
+                <selectorImage>./assets/images/gridsel219.svg</selectorImage>
+                
+            </grid> 
+        </view>
+      </variant>        
+</theme>
