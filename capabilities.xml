@@ -15,12 +15,12 @@
         <entry>builtin-fade</entry>
     </suppressTransitionProfiles>
 
-    <transitions name="instantfade">
-        <label>Instant w/Fade</label>
+    <transitions name="slidefade">
+        <label>Slide w/Fade</label>
         <selectable>true</selectable>
-        <systemToSystem>instant</systemToSystem>
+        <systemToSystem>slide</systemToSystem>
         <systemToGamelist>fade</systemToGamelist>
-        <gamelistToGamelist>instant</gamelistToGamelist>
+        <gamelistToGamelist>slide</gamelistToGamelist>
         <gamelistToSystem>fade</gamelistToSystem>
         <startupToSystem>slide</startupToSystem>
         <startupToGamelist>slide</startupToGamelist>
