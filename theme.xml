@@ -7,6 +7,7 @@
 <theme>
 
     <include>./colors.xml</include>
+    <include>./metadata-global/_default.xml</include>
     <include>./metadata-global/${system.theme}.xml</include>
 
 
