@@ -1,10 +1,11 @@
-# carbon_es_de for EmulationStation Desktop Edition
+# diamond_es_de for ES-DE v2 by Weestuarty and GreatFlash
 
-Carbon in an interpreted port of the orginal carbon theme for emulationstation fully updated for ESDE v2 new theme engine. It supports all systems as well as the latest application features of ESDE.
+Diamond in a refined interpretion of the orginal carbon theme for emulationstation fully updated for ES-DE v2 new theme engine. It supports all systems as well as the latest application features of ES-DE.
 
 ![systems](sys.png)
 ![games](game.png)
-
+![games](game2.png)
+![games](game3.png)
 The following options are included:
 
 6 variants:
