@@ -277,7 +277,6 @@
             <folderLinkSize>0.85 0.9</folderLinkSize>
             <folderLinkPos>0.47 0.48</folderLinkPos>
             <folderLinkIconColor>${backgroundColor}55</folderLinkIconColor>
-            <customFolderLinkIcon>./assets/badges/link.png</customFolderLinkIcon>
             <badgeIconColor>${mainFontColor}DD</badgeIconColor>
             <horizontalAlignment>center</horizontalAlignment>
             <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
