@@ -4,7 +4,7 @@
             <path>./core/sounds/systembrowse.wav</path>
         </sound>
         <sound name="quicksysselect">
-            <path>./core/sounds/systembrowse.wav</path>
+            <path>./core/sounds/quicksysselect.wav</path>
         </sound>
         <sound name="select">
             <path>./core/sounds/select.wav</path>

@@ -7,22 +7,19 @@
 <theme>
 
     <include>./colors.xml</include>
+    <include>./navigationsounds.xml</include>
     <include>./metadata-global/_default.xml</include>
     <include>./metadata-global/${system.theme}.xml</include>
-
 
     <aspectRatio name="4:3">
         <include>./4-3.xml</include>
     </aspectRatio>
-
     <aspectRatio name="16:10">
         <include>./16-10.xml</include>
     </aspectRatio>
-
     <aspectRatio name="21:9">
         <include>./21-9.xml</include>
     </aspectRatio>
-
 
     <variables>
         <mainFont>./assets/fonts/bold.ttf</mainFont>
@@ -55,87 +52,81 @@
             <zIndex>29</zIndex>
         </carousel>
         <image name="carback">
-			<pos>0.5 0.5</pos>
-			<size>1 0.22</size>
-			<origin>0.5 0.5</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.5 0.5</pos>
+            <size>1 0.22</size>
+            <origin>0.5 0.5</origin>
+            <path>./assets/images/background.png</path>
             <color>${firstColor}99</color>
             <brightness>-2.5</brightness>
-			<tile>false</tile>
-			<zIndex>28</zIndex>
+            <tile>false</tile>
+            <zIndex>28</zIndex>
         </image>
         <image name="systemcar fade">
-			<pos>0.5 0.39</pos>
-			<size>1 0.0075 </size>
-			<origin>0.5 0</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.5 0.39</pos>
+            <size>1 0.0075 </size>
+            <origin>0.5 0</origin>
+            <path>./assets/images/background.png</path>
             <color>${carColor}</color>
             <brightness>2.5</brightness>
-			<tile>false</tile>
-			<zIndex>30</zIndex>
+            <tile>false</tile>
+            <zIndex>30</zIndex>
         </image>
         <image name="systemcar fadebot">
-			<pos>0.5 0.605</pos>
-			<size>1 0.0075</size>
-			<origin>0.5 0</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.5 0.605</pos>
+            <size>1 0.0075</size>
+            <origin>0.5 0</origin>
+            <path>./assets/images/background.png</path>
             <color>${carColor}</color>
             <brightness>2.5</brightness>
-			<tile>false</tile>
-			<zIndex>30</zIndex>
+            <tile>false</tile>
+            <zIndex>30</zIndex>
         </image>
-        
-        
-        
         <text name="sysname">
-			<pos>0.025 0.03</pos>
-			<origin>0 0</origin>
-			<size>0.5 0.075</size>
+            <pos>0.025 0.03</pos>
+            <origin>0 0</origin>
+            <size>0.5 0.075</size>
             <systemdata>fullname</systemdata>
-			<fontPath>${secondFont}</fontPath>
-			<fontSize>0.06</fontSize>
-			<horizontalAlignment>left</horizontalAlignment>
-			<color>${mainFontColor}</color>
+            <fontPath>${secondFont}</fontPath>
+            <fontSize>0.06</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>${mainFontColor}</color>
             <zIndex>15</zIndex>
-		</text>
+        </text>
         <text name="sysman">
-			<pos>0.025 0.09</pos>
-			<origin>0 0</origin>
-			<size>0.5 0.06</size>
-            <text>${systemManufacturer}</text>			
-			<fontPath>${secondFont}</fontPath>
-			<fontSize>0.025</fontSize>
-			<horizontalAlignment>left</horizontalAlignment>
-			<color>${mainFontColor}</color>
+            <pos>0.025 0.09</pos>
+            <origin>0 0</origin>
+            <size>0.5 0.06</size>
+            <text>${systemManufacturer}</text>
+            <fontPath>${secondFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>${mainFontColor}</color>
             <zIndex>15</zIndex>
-		</text>
+        </text>
         <text name="sysrel">
-			<pos>0.025 0.125</pos>
-			<origin>0 0</origin>
-			<size>0.5 0.06</size>
+            <pos>0.025 0.125</pos>
+            <origin>0 0</origin>
+            <size>0.5 0.06</size>
             <text>${systemReleaseYear}</text>
-			<fontPath>${secondFont}</fontPath>
-			<fontSize>0.025</fontSize>
-			<horizontalAlignment>left</horizontalAlignment>
-			<color>${mainFontColor}</color>
+            <fontPath>${secondFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>${mainFontColor}</color>
             <zIndex>15</zIndex>
-		</text>
-        
-       
+        </text>
         <text name="gamecount">
-			<pos>0.95 0.965</pos>
-			<origin>1 0.5</origin>
-			<size>0.25 0.06</size>
+            <pos>0.95 0.965</pos>
+            <origin>1 0.5</origin>
+            <size>0.25 0.06</size>
             <systemdata>gamecount</systemdata>
             <defaultValue>:space:</defaultValue>
-			<fontPath>${helpFont}</fontPath>
-			<fontSize>0.025</fontSize>
-			<horizontalAlignment>center</horizontalAlignment>
+            <fontPath>${helpFont}</fontPath>
+            <fontSize>0.025</fontSize>
+            <horizontalAlignment>center</horizontalAlignment>
             <letterCase>uppercase</letterCase>
-			<color>${helpColor}</color>
+            <color>${helpColor}</color>
             <zIndex>15</zIndex>
-		</text>
-       
+        </text>
     </view>
 
     <view name="system, gamelist">
@@ -148,93 +139,87 @@
             <fontSize>${helpFontSize}</fontSize>
         </helpsystem>
         <image name="helpbar1">
-			<pos>0.5 0.93</pos>
-			<size>1 0.0075</size>
-			<origin>0.5 0</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.5 0.93</pos>
+            <size>1 0.0075</size>
+            <origin>0.5 0</origin>
+            <path>./assets/images/background.png</path>
             <color>${carColor}</color>
             <brightness>2.5</brightness>
-			<tile>false</tile>
-			<zIndex>30</zIndex>
+            <tile>false</tile>
+            <zIndex>30</zIndex>
         </image>
         <image name="helpbar2">
-			<pos>0.5 1</pos>
-			<size>1 0.07</size>
-			<origin>0.5 1</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.5 1</pos>
+            <size>1 0.07</size>
+            <origin>0.5 1</origin>
+            <path>./assets/images/background.png</path>
             <color>${firstColor}</color>
             <brightness>-2.5</brightness>
-			<tile>false</tile>
-			<zIndex>14</zIndex>
+            <tile>false</tile>
+            <zIndex>14</zIndex>
         </image>
         <image name="backart">
-			<pos>0.5 0.5</pos>
-			<size>1 1</size>
-			<origin>0.5 0.5</origin>
-			<path>./assets/backgrounds/${system.theme}.png</path>
+            <pos>0.5 0.5</pos>
+            <size>1 1</size>
+            <origin>0.5 0.5</origin>
+            <path>./assets/backgrounds/${system.theme}.png</path>
             <default>./assets/backgrounds/${system.theme}.jpg</default>
-			<tile>false</tile>
-			<zIndex>1</zIndex>
+            <tile>false</tile>
+            <zIndex>1</zIndex>
         </image>
     </view>
 
     <view name="gamelist">
-        
-    <image name="backgroundoverlay">
-        <pos>0.5 0.5</pos>
-        <size>1 1</size>
-        <origin>0.5 0.5</origin>
-        <path>./assets/images/background.png</path>
-        <color>${firstColor}bb</color>
-        <brightness>-2.5</brightness>
-        <tile>false</tile>
-        <zIndex>2</zIndex>
-    </image>
+        <image name="backgroundoverlay">
+            <pos>0.5 0.5</pos>
+            <size>1 1</size>
+            <origin>0.5 0.5</origin>
+            <path>./assets/images/background.png</path>
+            <color>${firstColor}bb</color>
+            <brightness>-2.5</brightness>
+            <tile>false</tile>
+            <zIndex>2</zIndex>
+        </image>
         <image name="topbar1">
-			<pos>0.5 0.15</pos>
-			<size>1 0.0075</size>
-			<origin>0.5 0</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.5 0.15</pos>
+            <size>1 0.0075</size>
+            <origin>0.5 0</origin>
+            <path>./assets/images/background.png</path>
             <color>${carColor}</color>
             <brightness>2.5</brightness>
-			<tile>false</tile>
-			<zIndex>30</zIndex>
+            <tile>false</tile>
+            <zIndex>30</zIndex>
         </image>
         <image name="topbar2">
-			<pos>0.5 0</pos>
-			<size>1 0.15</size>
-			<origin>0.5 0</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.5 0</pos>
+            <size>1 0.15</size>
+            <origin>0.5 0</origin>
+            <path>./assets/images/background.png</path>
             <color>${firstColor}</color>
             <brightness>-2.5</brightness>
-			<tile>false</tile>
-			<zIndex>14</zIndex>
+            <tile>false</tile>
+            <zIndex>14</zIndex>
         </image>
         <image name="sidebar1">
-			<pos>0.95 0.15</pos>
-			<size>0.005 0.78</size>
-			<origin>0 0</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.95 0.15</pos>
+            <size>0.005 0.78</size>
+            <origin>0 0</origin>
+            <path>./assets/images/background.png</path>
             <color>${carColor}</color>
             <brightness>2.5</brightness>
-			<tile>false</tile>
-			<zIndex>30</zIndex>
+            <tile>false</tile>
+            <zIndex>30</zIndex>
         </image>
-        
         <image name="sidebar2">
-			<pos>0.95 0.15</pos>
-			<size>0.05 0.78</size>
-			<origin>0 0</origin>
-			<path>./assets/images/background.png</path>
+            <pos>0.95 0.15</pos>
+            <size>0.05 0.78</size>
+            <origin>0 0</origin>
+            <path>./assets/images/background.png</path>
             <color>${firstColor}</color>
             <brightness>-2.5</brightness>
-			<tile>false</tile>
-			<zIndex>14</zIndex>
+            <tile>false</tile>
+            <zIndex>14</zIndex>
         </image>
-       
-
-        
-        
         <text name="players1">
             <metadata>players</metadata>
             <fontPath>./assets/fonts/players.ttf</fontPath>
@@ -247,7 +232,6 @@
             <size>0.03 0.1</size>
             <origin>0.5 0</origin>
         </text>
-        
         <datetime name="release1">
             <metadata>releasedate</metadata>
             <fontPath>${mainFont}</fontPath>
@@ -262,8 +246,6 @@
             <size>0.05 0.06</size>
             <origin>0.5 1</origin>
         </datetime>
-        
-        
         <rating name="rating">
             <pos>0.9225 0.25</pos>
             <size>0.08 0.04</size>
@@ -273,7 +255,6 @@
             <filledPath>./assets/images/rating_filled.svg</filledPath>
             <unfilledPath>./assets/images/rating_empty.svg</unfilledPath>
         </rating>
-        
         <text name="collectionsSystemName">
             <pos>0.5 0.135</pos>
             <origin>0.5 0.5</origin>
@@ -313,7 +294,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
-                
                 <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
                 <imageColor>${mainFontColor}AA</imageColor>
                 <imageSelectedColor>${mainFontColor}</imageSelectedColor>
@@ -334,7 +314,6 @@
                 <zIndex>10</zIndex>
                 <rowTransitions>instant</rowTransitions>
             </grid>
-            
             <image name="Syslogo">
                 <path>./assets/syslogo/${system.theme}.svg</path>
                 <default>./assets/syslogo/${system.theme}.png</default>
@@ -364,7 +343,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
-                
                 <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
                 <imageColor>${secondColor}</imageColor>
                 <imageSelectedColor>${secondColor}</imageSelectedColor>
@@ -386,7 +364,7 @@
                 <letterCase>uppercase</letterCase>
                 <indicators>symbols</indicators>
                 <collectionIndicators>symbols</collectionIndicators>
-        </textlist>
+            </textlist>
             <text name="description1">
                 <size>0.41 0.2</size>
                 <metadata>description</metadata>
@@ -398,7 +376,6 @@
                 <pos>0.52 0.65</pos>
                 <origin>0 0</origin>
             </text>
-            
             <image name="midbar1">
                 <pos>0.5 0.17</pos>
                 <size>0.003 0.74</size>
@@ -421,7 +398,6 @@
                 <size>0.2 0.06</size>
                 <origin>0 0</origin>
             </text>
-           
             <text name="developer1">
                 <metadata>developer</metadata>
                 <fontPath>${mainFont}</fontPath>
@@ -489,7 +465,6 @@
                 <size>0.85 0.09</size>
                 <origin>0.5 0.5</origin>
             </text>
-           
             <image name="Syslogo">
                 <path>./assets/syslogocolor/${system.theme}.svg</path>
                 <default>./assets/syslogocolor/${system.theme}.png</default>
@@ -524,7 +499,7 @@
                 <letterCase>uppercase</letterCase>
                 <indicators>symbols</indicators>
                 <collectionIndicators>symbols</collectionIndicators>
-        </textlist>
+            </textlist>
             <text name="description1">
                 <size>0.41 0.2</size>
                 <metadata>description</metadata>
@@ -536,7 +511,6 @@
                 <pos>0.52 0.65</pos>
                 <origin>0 0</origin>
             </text>
-            
             <image name="midbar1">
                 <pos>0.5 0.17</pos>
                 <size>0.003 0.74</size>
@@ -559,7 +533,6 @@
                 <size>0.2 0.06</size>
                 <origin>0 0</origin>
             </text>
-           
             <text name="developer1">
                 <metadata>developer</metadata>
                 <fontPath>${mainFont}</fontPath>
@@ -594,7 +567,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
-                
                 <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
                 <imageColor>${secondColor}</imageColor>
                 <imageSelectedColor>${secondColor}</imageSelectedColor>
@@ -616,9 +588,7 @@
                 <letterCase>uppercase</letterCase>
                 <indicators>symbols</indicators>
                 <collectionIndicators>symbols</collectionIndicators>
-        </textlist>
-            
-           
+            </textlist>
             <image name="midbar1">
                 <pos>0.5 0.17</pos>
                 <size>0.003 0.74</size>
@@ -641,7 +611,6 @@
                 <size>0.2 0.06</size>
                 <origin>0 0</origin>
             </text>
-           
             <text name="developer1">
                 <metadata>developer</metadata>
                 <fontPath>${mainFont}</fontPath>
@@ -663,7 +632,7 @@
                 <zIndex>20</zIndex>
             </video>
             <image name="marquee">
-            <imageType>marquee</imageType>
+                <imageType>marquee</imageType>
                 <maxSize>0.35 0.22</maxSize>
                 <origin>0.5 0.5</origin>
                 <pos>0.7275 0.27</pos>
@@ -703,9 +672,7 @@
                 <letterCase>uppercase</letterCase>
                 <indicators>symbols</indicators>
                 <collectionIndicators>symbols</collectionIndicators>
-        </textlist>
-            
-            
+            </textlist>
             <image name="midbar1">
                 <pos>0.5 0.17</pos>
                 <size>0.003 0.74</size>
@@ -728,7 +695,6 @@
                 <size>0.2 0.06</size>
                 <origin>0 0</origin>
             </text>
-           
             <text name="developer1">
                 <metadata>developer</metadata>
                 <fontPath>${mainFont}</fontPath>
@@ -750,7 +716,7 @@
                 <zIndex>20</zIndex>
             </video>
             <image name="marquee">
-            <imageType>marquee</imageType>
+                <imageType>marquee</imageType>
                 <maxSize>0.35 0.22</maxSize>
                 <origin>0.5 0.5</origin>
                 <pos>0.7275 0.27</pos>
