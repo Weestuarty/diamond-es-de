@@ -81,7 +81,7 @@
         <selectable>true</selectable>
     </variant>
     <variant name="colorvid">
-        <label>Color w/ tex alt</label>
+        <label>Color w/ text alt</label>
         <selectable>true</selectable>
     </variant>
 
