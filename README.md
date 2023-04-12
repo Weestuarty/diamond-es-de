@@ -1,4 +1,5 @@
-# diamond_es_de for ES-DE v2 by Weestuarty and GreatFlash
+# diamond_es_de for ES-DE v2
+by Weestuarty and GreatFlash
 
 Diamond in a refined interpretion of the orginal carbon theme for emulationstation fully updated for ES-DE v2 new theme engine. It supports all systems as well as the latest application features of ES-DE.
 
