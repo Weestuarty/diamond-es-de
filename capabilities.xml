@@ -53,14 +53,12 @@
     <colorScheme name="4">
         <label>Blue light</label>
     </colorScheme>
-    
     <colorScheme name="6">
         <label>Purple</label>
     </colorScheme>
     <colorScheme name="7">
         <label>Greyscale</label>
     </colorScheme>
-
 
     <variant name="solidgrid">
         <label>Solid w/ grid gameslist</label>
@@ -86,4 +84,5 @@
         <label>Color w/ tex alt</label>
         <selectable>true</selectable>
     </variant>
+
 </themeCapabilities>
