@@ -163,7 +163,6 @@
             <size>1 1</size>
             <origin>0.5 0.5</origin>
             <path>./assets/backgrounds/${system.theme}.png</path>
-            <default>./assets/backgrounds/${system.theme}.jpg</default>
             <tile>false</tile>
             <zIndex>1</zIndex>
         </image>
@@ -294,7 +293,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
-                <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
                 <imageColor>${mainFontColor}AA</imageColor>
                 <imageSelectedColor>${mainFontColor}</imageSelectedColor>
             </carousel>
@@ -316,7 +314,6 @@
             </grid>
             <image name="Syslogo">
                 <path>./assets/syslogo/${system.theme}.svg</path>
-                <default>./assets/syslogo/${system.theme}.png</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -343,7 +340,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
-                <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
                 <imageColor>${secondColor}</imageColor>
                 <imageSelectedColor>${secondColor}</imageSelectedColor>
             </carousel>
@@ -420,7 +416,6 @@
             </video>
             <image name="Syslogo">
                 <path>./assets/syslogo/${system.theme}.svg</path>
-                <default>./assets/syslogo/${system.theme}.png</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -434,7 +429,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
-                <defaultImage>./assets/syslogocolor/${system.theme}.png</defaultImage>
             </carousel>
         </view>
         <view name="gamelist">
@@ -467,7 +461,6 @@
             </text>
             <image name="Syslogo">
                 <path>./assets/syslogocolor/${system.theme}.svg</path>
-                <default>./assets/syslogocolor/${system.theme}.png</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -480,7 +473,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
-                <defaultImage>./assets/syslogocolor/${system.theme}.png</defaultImage>
             </carousel>
         </view>
         <view name="gamelist">
@@ -555,7 +547,6 @@
             </video>
             <image name="Syslogo">
                 <path>./assets/syslogocolor/${system.theme}.svg</path>
-                <default>./assets/syslogocolor/${system.theme}.png</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -567,7 +558,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
-                <defaultImage>./assets/syslogo/${system.theme}.png</defaultImage>
                 <imageColor>${secondColor}</imageColor>
                 <imageSelectedColor>${secondColor}</imageSelectedColor>
             </carousel>
@@ -640,7 +630,6 @@
             </image>
             <image name="Syslogo">
                 <path>./assets/syslogo/${system.theme}.svg</path>
-                <default>./assets/syslogo/${system.theme}.png</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -653,7 +642,6 @@
         <view name="system">
             <carousel name="system_carousel">
                 <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
-                <defaultImage>./assets/syslogocolor/${system.theme}.png</defaultImage>
             </carousel>
         </view>
         <view name="gamelist">
@@ -724,7 +712,6 @@
             </image>
             <image name="Syslogo">
                 <path>./assets/syslogocolor/${system.theme}.svg</path>
-                <default>./assets/syslogocolor/${system.theme}.png</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
