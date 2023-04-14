@@ -200,6 +200,7 @@
             <origin>0.5 0.5</origin>
             <path>./assets/backgrounds/${system.theme}.png</path>
             <tile>false</tile>
+            <interpolation>linear</interpolation>
             <zIndex>1</zIndex>
         </image>
     </view>
