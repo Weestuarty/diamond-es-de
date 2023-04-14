@@ -26,6 +26,9 @@
         <mainFontSize>0.025</mainFontSize>
         <secondFont>./assets/fonts/bold.ttf</secondFont>
         <helpFont>./assets/fonts/cabin.ttf</helpFont>
+        <sysFont1>./assets/fonts/vanin.otf</sysFont1>
+    
+        <sysFont2>./assets/fonts/vanout.otf</sysFont2>
         <helpFontSize>0.025</helpFontSize>
     </variables>
 
@@ -86,10 +89,21 @@
             <origin>0 0</origin>
             <size>0.5 0.075</size>
             <systemdata>fullname</systemdata>
-            <fontPath>${secondFont}</fontPath>
+            <fontPath>${sysFont1}</fontPath>
             <fontSize>0.06</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
-            <color>${mainFontColor}</color>
+            <color>${fontColor}</color>
+            <zIndex>14</zIndex>
+        </text>
+        <text name="sysname2">
+            <pos>0.025 0.03</pos>
+            <origin>0 0</origin>
+            <size>0.5 0.075</size>
+            <systemdata>fullname</systemdata>
+            <fontPath>${sysFont2}</fontPath>
+            <fontSize>0.06</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>000000</color>
             <zIndex>15</zIndex>
         </text>
         <text name="sysman">
@@ -97,10 +111,21 @@
             <origin>0 0</origin>
             <size>0.5 0.06</size>
             <text>${systemManufacturer}</text>
-            <fontPath>${secondFont}</fontPath>
+            <fontPath>${sysFont1}</fontPath>
             <fontSize>0.025</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
-            <color>${mainFontColor}</color>
+            <color>${fontColor}</color>
+            <zIndex>14</zIndex>
+        </text>
+        <text name="sysman2">
+            <pos>0.025 0.09</pos>
+            <origin>0 0</origin>
+            <size>0.5 0.06</size>
+            <text>${systemManufacturer}</text>
+            <fontPath>${sysFont2}</fontPath>
+            <fontSize>0.025</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>000000</color>
             <zIndex>15</zIndex>
         </text>
         <text name="sysrel">
@@ -108,10 +133,21 @@
             <origin>0 0</origin>
             <size>0.5 0.06</size>
             <text>${systemReleaseYear}</text>
-            <fontPath>${secondFont}</fontPath>
+            <fontPath>${sysFont1}</fontPath>
             <fontSize>0.025</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
-            <color>${mainFontColor}</color>
+            <color>${fontColor}</color>
+            <zIndex>14</zIndex>
+        </text>
+        <text name="sysrel2">
+            <pos>0.025 0.125</pos>
+            <origin>0 0</origin>
+            <size>0.5 0.06</size>
+            <text>${systemReleaseYear}</text>
+            <fontPath>${sysFont2}</fontPath>
+            <fontSize>0.025</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <color>000000</color>
             <zIndex>15</zIndex>
         </text>
         <text name="gamecount">
@@ -225,6 +261,7 @@
             <fontSize>0.05</fontSize>
             <color>${mainFontColor}</color>
             <letterCase>capitalize</letterCase>
+            <defaultValue>:space:</defaultValue>
             <horizontalAlignment>left</horizontalAlignment>
             <lineSpacing>0.95</lineSpacing>
             <pos>0.98 0.37</pos>
@@ -237,6 +274,7 @@
             <format>%Y</format>
             <rotation>-90</rotation>
             <fontSize>0.04</fontSize>
+            <defaultValue>:space:</defaultValue>
             <color>${mainFontColor}</color>
             <letterCase>capitalize</letterCase>
             <horizontalAlignment>left</horizontalAlignment>
@@ -301,15 +339,17 @@
                 <pos>0.48 0.57</pos>
                 <size>0.95 0.81</size>
                 <origin>0.5 0.5</origin>
-                <itemSize>0.2375 0.32</itemSize>
+                <itemSize>0.22 0.32</itemSize>
                 <scaleInwards>true</scaleInwards>
                 <itemScale>1.1</itemScale>
                 <imageType>miximage</imageType>
-                <itemSpacing>0 0.1</itemSpacing>
+                <itemSpacing>0.02 0.1</itemSpacing>
                 <selectorImage>./assets/images/gridsel.svg</selectorImage>
                 <selectorColor>${selectColor}</selectorColor>
                 <selectorLayer>bottom</selectorLayer>
                 <zIndex>10</zIndex>
+                <textColor>${mainFontColor}</textColor>
+                <systemNameSuffix>false</systemNameSuffix>
                 <rowTransitions>instant</rowTransitions>
             </grid>
             <image name="Syslogo">
@@ -388,6 +428,7 @@
                 <fontSize>0.03</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>left</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.51 0.86</pos>
@@ -400,6 +441,7 @@
                 <fontSize>0.0225</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>right</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.94 0.86</pos>
@@ -436,15 +478,17 @@
                 <pos>0.48 0.57</pos>
                 <size>0.95 0.81</size>
                 <origin>0.5 0.5</origin>
-                <itemSize>0.2375 0.32</itemSize>
+                <itemSize>0.22 0.32</itemSize>
                 <scaleInwards>true</scaleInwards>
                 <itemScale>1.1</itemScale>
                 <imageType>miximage</imageType>
-                <itemSpacing>0 0.1</itemSpacing>
+                <itemSpacing>0.02 0.1</itemSpacing>
                 <selectorImage>./assets/images/gridsel.svg</selectorImage>
                 <selectorColor>${selectColor}</selectorColor>
                 <selectorLayer>bottom</selectorLayer>
                 <zIndex>10</zIndex>
+                <textColor>${mainFontColor}</textColor>
+                <systemNameSuffix>false</systemNameSuffix>
                 <rowTransitions>instant</rowTransitions>
             </grid>
             <text name="gamename">
@@ -520,6 +564,7 @@
                 <fontSize>0.03</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>left</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.51 0.86</pos>
@@ -532,6 +577,7 @@
                 <fontSize>0.0225</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>right</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.94 0.86</pos>
@@ -596,6 +642,7 @@
                 <fontSize>0.03</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>left</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.51 0.86</pos>
@@ -608,6 +655,7 @@
                 <fontSize>0.0225</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>right</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.94 0.86</pos>
@@ -678,6 +726,7 @@
                 <fontSize>0.03</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>left</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.51 0.86</pos>
@@ -690,6 +739,7 @@
                 <fontSize>0.0225</fontSize>
                 <color>${mainFontColor}</color>
                 <letterCase>capitalize</letterCase>
+                <defaultValue>:space:</defaultValue>
                 <horizontalAlignment>right</horizontalAlignment>
                 <lineSpacing>0.95</lineSpacing>
                 <pos>0.94 0.86</pos>
