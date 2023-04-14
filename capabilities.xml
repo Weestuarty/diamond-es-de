@@ -1,5 +1,5 @@
 <!--
-    Theme capabilities for elegance-es-de
+    Theme capabilities for diamond-es-de
 -->
 
 <themeCapabilities>
@@ -68,16 +68,16 @@
         <label>Solid w/ text gamelist</label>
         <selectable>true</selectable>
     </variant>
+    <variant name="solidvid">
+        <label>Solid w/ text alt</label>
+        <selectable>true</selectable>
+    </variant>
     <variant name="colorgrid">
         <label>Color w/ grid gamelist</label>
         <selectable>true</selectable>
     </variant>
     <variant name="colortext">
         <label>Color w/ text gamelist</label>
-        <selectable>true</selectable>
-    </variant>
-    <variant name="solidvid">
-        <label>Solid w/ text alt</label>
         <selectable>true</selectable>
     </variant>
     <variant name="colorvid">

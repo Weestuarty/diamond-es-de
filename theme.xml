@@ -298,15 +298,16 @@
         </view>
         <view name="gamelist">
             <grid name="sysgrid">
-                <pos>0.505 0.565</pos>
-                <size>1 0.81</size>
+                <pos>0.48 0.57</pos>
+                <size>0.95 0.81</size>
                 <origin>0.5 0.5</origin>
-                <itemSize>0.23 0.32</itemSize>
+                <itemSize>0.2375 0.32</itemSize>
+                <scaleInwards>true</scaleInwards>
                 <itemScale>1.1</itemScale>
                 <imageType>miximage</imageType>
-                <itemSpacing>0 0.15</itemSpacing>
+                <itemSpacing>0 0.1</itemSpacing>
                 <selectorImage>./assets/images/gridsel.svg</selectorImage>
-                <selectorColor>${selectColor}cc</selectorColor>
+                <selectorColor>${selectColor}</selectorColor>
                 <selectorLayer>bottom</selectorLayer>
                 <zIndex>10</zIndex>
                 <rowTransitions>instant</rowTransitions>
@@ -432,15 +433,16 @@
         </view>
         <view name="gamelist">
             <grid name="sysgrid">
-                <pos>0.505 0.565</pos>
-                <size>1 0.81</size>
+                <pos>0.48 0.57</pos>
+                <size>0.95 0.81</size>
                 <origin>0.5 0.5</origin>
-                <itemSize>0.23 0.32</itemSize>
+                <itemSize>0.2375 0.32</itemSize>
+                <scaleInwards>true</scaleInwards>
                 <itemScale>1.1</itemScale>
                 <imageType>miximage</imageType>
-                <itemSpacing>0 0.15</itemSpacing>
+                <itemSpacing>0 0.1</itemSpacing>
                 <selectorImage>./assets/images/gridsel.svg</selectorImage>
-                <selectorColor>${selectColor}cc</selectorColor>
+                <selectorColor>${selectColor}</selectorColor>
                 <selectorLayer>bottom</selectorLayer>
                 <zIndex>10</zIndex>
                 <rowTransitions>instant</rowTransitions>
