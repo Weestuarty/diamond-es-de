@@ -654,11 +654,12 @@
                 <zIndex>30</zIndex>
             </image>
             
+            
             <video name="gamedisplay">
-                <imageType>cover, marquee</imageType>
+                <imageType>cover,marquee</imageType>
                 <maxSize>0.44 0.75</maxSize>
                 <origin>0.5 0.5</origin>
-                <pos>0.7275 0.545</pos>
+                <pos>0.7265 0.545</pos>
                 <pillarboxes>false</pillarboxes>
                 <zIndex>20</zIndex>
             </video>
@@ -710,7 +711,7 @@
                 <imageType>cover, marquee</imageType>
                 <maxSize>0.44 0.75</maxSize>
                 <origin>0.5 0.5</origin>
-                <pos>0.7275 0.545</pos>
+                <pos>0.7265 0.545</pos>
                 <pillarboxes>false</pillarboxes>
                 <zIndex>20</zIndex>
             </video>
