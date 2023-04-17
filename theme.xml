@@ -611,22 +611,7 @@
             </carousel>
         </view>
         <view name="gamelist">
-            <textlist name="gamelist_textlist">
-                <pos>0.01 0.16</pos>
-                <size>0.49 0.77</size>
-                <selectorColor>00000000</selectorColor>
-                <selectedColor>${selectColor}</selectedColor>
-                <primaryColor>${mainFontColor}</primaryColor>
-                <secondaryColor>${mainFontColor}</secondaryColor>
-                <systemNameSuffix>false</systemNameSuffix>
-                <fontPath>${mainFont}</fontPath>
-                <fontSize>0.03</fontSize>
-                <horizontalAlignment>left</horizontalAlignment>
-                <horizontalMargin>0</horizontalMargin>
-                <letterCase>uppercase</letterCase>
-                <indicators>symbols</indicators>
-                <collectionIndicators>symbols</collectionIndicators>
-            </textlist>
+            
             <textlist name="gamelist_textlist">
                 <pos>0.01 0.16</pos>
                 <size>0.49 0.77</size>
@@ -659,7 +644,7 @@
                 <imageType>cover,marquee</imageType>
                 <maxSize>0.44 0.75</maxSize>
                 <origin>0.5 0.5</origin>
-                <pos>0.7265 0.545</pos>
+                <pos>0.72675 0.545</pos>
                 <pillarboxes>false</pillarboxes>
                 <zIndex>20</zIndex>
             </video>
@@ -711,7 +696,7 @@
                 <imageType>cover, marquee</imageType>
                 <maxSize>0.44 0.75</maxSize>
                 <origin>0.5 0.5</origin>
-                <pos>0.7265 0.545</pos>
+                <pos>0.72675 0.545</pos>
                 <pillarboxes>false</pillarboxes>
                 <zIndex>20</zIndex>
             </video>
