@@ -337,7 +337,7 @@
         </view>
         <view name="gamelist">
             <grid name="sysgrid">
-                <pos>0.485 0.57</pos>
+                <pos>0.485 0.58</pos>
                 <size>0.95 0.81</size>
                 <origin>0.5 0.5</origin>
                 <itemSize>0.22 0.32</itemSize>
@@ -476,7 +476,7 @@
         </view>
         <view name="gamelist">
             <grid name="sysgrid">
-                <pos>0.485 0.57</pos>
+                <pos>0.485 0.58</pos>
                 <size>0.95 0.81</size>
                 <origin>0.5 0.5</origin>
                 <itemSize>0.22 0.32</itemSize>
@@ -627,6 +627,22 @@
                 <indicators>symbols</indicators>
                 <collectionIndicators>symbols</collectionIndicators>
             </textlist>
+            <textlist name="gamelist_textlist">
+                <pos>0.01 0.16</pos>
+                <size>0.49 0.77</size>
+                <selectorColor>00000000</selectorColor>
+                <selectedColor>${selectColor}</selectedColor>
+                <primaryColor>${mainFontColor}</primaryColor>
+                <secondaryColor>${mainFontColor}</secondaryColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.03</fontSize>
+                <horizontalAlignment>left</horizontalAlignment>
+                <horizontalMargin>0</horizontalMargin>
+                <letterCase>uppercase</letterCase>
+                <indicators>symbols</indicators>
+                <collectionIndicators>symbols</collectionIndicators>
+            </textlist>
             <image name="midbar1">
                 <pos>0.5 0.17</pos>
                 <size>0.003 0.74</size>
@@ -637,47 +653,15 @@
                 <tile>false</tile>
                 <zIndex>30</zIndex>
             </image>
-            <text name="publisher1">
-                <metadata>publisher</metadata>
-                <fontPath>${mainFont}</fontPath>
-                <fontSize>0.03</fontSize>
-                <color>${mainFontColor}</color>
-                <letterCase>capitalize</letterCase>
-                <defaultValue>:space:</defaultValue>
-                <horizontalAlignment>left</horizontalAlignment>
-                <lineSpacing>0.95</lineSpacing>
-                <pos>0.51 0.86</pos>
-                <size>0.2 0.06</size>
-                <origin>0 0</origin>
-            </text>
-            <text name="developer1">
-                <metadata>developer</metadata>
-                <fontPath>${mainFont}</fontPath>
-                <fontSize>0.0225</fontSize>
-                <color>${mainFontColor}</color>
-                <letterCase>capitalize</letterCase>
-                <defaultValue>:space:</defaultValue>
-                <horizontalAlignment>right</horizontalAlignment>
-                <lineSpacing>0.95</lineSpacing>
-                <pos>0.94 0.86</pos>
-                <size>0.2 0.06</size>
-                <origin>1 0</origin>
-            </text>
+            
             <video name="gamedisplay">
-                <imageType>image</imageType>
-                <maxSize>0.44 0.475</maxSize>
+                <imageType>cover</imageType>
+                <maxSize>0.44 0.75</maxSize>
                 <origin>0.5 0.5</origin>
-                <pos>0.7275 0.625</pos>
+                <pos>0.7275 0.545</pos>
                 <pillarboxes>false</pillarboxes>
                 <zIndex>20</zIndex>
             </video>
-            <image name="marquee">
-                <imageType>marquee</imageType>
-                <maxSize>0.35 0.22</maxSize>
-                <origin>0.5 0.5</origin>
-                <pos>0.7275 0.27</pos>
-                <zIndex>20</zIndex>
-            </image>
             <image name="Syslogo">
                 <path>./assets/syslogo/${system.theme}.svg</path>
                 <pos>0.5 0.07</pos>
@@ -721,47 +705,16 @@
                 <tile>false</tile>
                 <zIndex>30</zIndex>
             </image>
-            <text name="publisher1">
-                <metadata>publisher</metadata>
-                <fontPath>${mainFont}</fontPath>
-                <fontSize>0.03</fontSize>
-                <color>${mainFontColor}</color>
-                <letterCase>capitalize</letterCase>
-                <defaultValue>:space:</defaultValue>
-                <horizontalAlignment>left</horizontalAlignment>
-                <lineSpacing>0.95</lineSpacing>
-                <pos>0.51 0.86</pos>
-                <size>0.2 0.06</size>
-                <origin>0 0</origin>
-            </text>
-            <text name="developer1">
-                <metadata>developer</metadata>
-                <fontPath>${mainFont}</fontPath>
-                <fontSize>0.0225</fontSize>
-                <color>${mainFontColor}</color>
-                <letterCase>capitalize</letterCase>
-                <defaultValue>:space:</defaultValue>
-                <horizontalAlignment>right</horizontalAlignment>
-                <lineSpacing>0.95</lineSpacing>
-                <pos>0.94 0.86</pos>
-                <size>0.2 0.06</size>
-                <origin>1 0</origin>
-            </text>
+            
             <video name="gamedisplay">
-                <imageType>image</imageType>
-                <maxSize>0.44 0.475</maxSize>
+                <imageType>cover</imageType>
+                <maxSize>0.44 0.75</maxSize>
                 <origin>0.5 0.5</origin>
-                <pos>0.7275 0.625</pos>
+                <pos>0.7275 0.545</pos>
                 <pillarboxes>false</pillarboxes>
                 <zIndex>20</zIndex>
             </video>
-            <image name="marquee">
-                <imageType>marquee</imageType>
-                <maxSize>0.35 0.22</maxSize>
-                <origin>0.5 0.5</origin>
-                <pos>0.7275 0.27</pos>
-                <zIndex>20</zIndex>
-            </image>
+            
             <image name="Syslogo">
                 <path>./assets/syslogocolor/${system.theme}.svg</path>
                 <pos>0.5 0.07</pos>
