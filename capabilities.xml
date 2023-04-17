@@ -60,29 +60,31 @@
         <label>Greyscale</label>
     </colorScheme>
 
-    <variant name="colorgrid">
-        <label>Color w/ grid gamelist</label>
+    <variant name="colorvid">
+        <label>Color w/ text alt</label>
         <selectable>true</selectable>
     </variant>
     <variant name="colortext">
         <label>Color w/ text gamelist</label>
         <selectable>true</selectable>
     </variant>
-    <variant name="colorvid">
-        <label>Color w/ text alt</label>
-        <selectable>true</selectable>
-    </variant>
-    <variant name="solidgrid">
-        <label>Solid w/ grid gameslist</label>
-        <selectable>true</selectable>
-    </variant>
-    <variant name="solidtext">
-        <label>Solid w/ text gamelist</label>
+    <variant name="colorgrid">
+        <label>Color w/ grid gamelist</label>
         <selectable>true</selectable>
     </variant>
     <variant name="solidvid">
         <label>Solid w/ text alt</label>
         <selectable>true</selectable>
     </variant>
+    <variant name="solidtext">
+        <label>Solid w/ text gamelist</label>
+        <selectable>true</selectable>
+    </variant>
+    <variant name="solidgrid">
+        <label>Solid w/ grid gameslist</label>
+        <selectable>true</selectable>
+    </variant>
+    
+    
 
 </themeCapabilities>
