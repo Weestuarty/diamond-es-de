@@ -16,12 +16,12 @@
     </suppressTransitionProfiles>
 
     <transitions name="slidefade">
-        <label>Slide w/Fade</label>
+        <label>Slide</label>
         <selectable>true</selectable>
         <systemToSystem>slide</systemToSystem>
-        <systemToGamelist>fade</systemToGamelist>
+        <systemToGamelist>slide</systemToGamelist>
         <gamelistToGamelist>slide</gamelistToGamelist>
-        <gamelistToSystem>fade</gamelistToSystem>
+        <gamelistToSystem>slide</gamelistToSystem>
         <startupToSystem>slide</startupToSystem>
         <startupToGamelist>slide</startupToGamelist>
     </transitions>
