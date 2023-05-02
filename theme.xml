@@ -8,8 +8,11 @@
 
     <include>./colors.xml</include>
     <include>./navigationsounds.xml</include>
-    <include>./metadata-global/_default.xml</include>
-    <include>./metadata-global/${system.theme}.xml</include>
+   <include>./system/metadata/_default.xml</include>
+    <include>./system/custom/metadata/_default.xml</include>
+    <include>./system/custom/metadata/${system.theme}.xml</include>
+    <include>./system/metadata/${system.theme}.xml</include>
+
 
     <aspectRatio name="4:3">
         <include>./4-3.xml</include>
@@ -30,6 +33,10 @@
     
         <sysFont2>./assets/fonts/vanout.otf</sysFont2>
         <helpFontSize>0.025</helpFontSize>
+        <syslogo>./system/logos/system-logo-white/${system.theme}.svg</syslogo>
+        <syslogocustom>./system/custom/logo/${system.theme}.svg</syslogocustom>
+        <syslogocolor>./system/logos/system-logo-color/${system.theme}.svg</syslogocolor>
+        <syslogocolorcustom>./system/custom/logocolor/${system.theme}.svg</syslogocolorcustom>
     </variables>
 
     <view name="system">
@@ -330,7 +337,9 @@
     <variant name="solidgrid">
         <view name="system">
             <carousel name="system_carousel">
-                <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
+                <staticImage>${syslogo}</staticImage>
+                
+                <defaultImage>${syslogocustom}</defaultImage>
                 <imageColor>${mainFontColor}AA</imageColor>
                 <imageSelectedColor>${mainFontColor}</imageSelectedColor>
             </carousel>
@@ -354,7 +363,8 @@
                 <rowTransitions>instant</rowTransitions>
             </grid>
             <image name="Syslogo">
-                <path>./assets/syslogo/${system.theme}.svg</path>
+                <path>${syslogo}</path>
+                <default>${syslogocustom}</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -380,7 +390,8 @@
     <variant name="solidtext">
         <view name="system">
             <carousel name="system_carousel">
-                <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
+                <staticImage>${syslogo}</staticImage>
+                <defaultImage>${syslogocustom}</defaultImage>
                 <imageColor>${secondColor}</imageColor>
                 <imageSelectedColor>${secondColor}</imageSelectedColor>
             </carousel>
@@ -458,7 +469,8 @@
                 <zIndex>20</zIndex>
             </video>
             <image name="Syslogo">
-                <path>./assets/syslogo/${system.theme}.svg</path>
+                <path>${syslogo}</path>
+                <default>${syslogocustom}</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -471,7 +483,8 @@
     <variant name="colorgrid">
         <view name="system">
             <carousel name="system_carousel">
-                <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
+                <staticImage>${syslogocolor}</staticImage>
+                <defaultImage>${syslogocolorcustom}</defaultImage>
             </carousel>
         </view>
         <view name="gamelist">
@@ -506,7 +519,8 @@
                 <origin>0.5 0.5</origin>
             </text>
             <image name="Syslogo">
-                <path>./assets/syslogocolor/${system.theme}.svg</path>
+                <path>${syslogocolor}</path>
+                <default>${syslogocolorcustom}</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -518,7 +532,9 @@
     <variant name="colortext">
         <view name="system">
             <carousel name="system_carousel">
-                <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
+                <staticImage>${syslogocolor}</staticImage>
+                
+                <defaultImage>${syslogocolorcustom}</defaultImage>
             </carousel>
         </view>
         <view name="gamelist">
@@ -594,7 +610,8 @@
                 <zIndex>20</zIndex>
             </video>
             <image name="Syslogo">
-                <path>./assets/syslogocolor/${system.theme}.svg</path>
+                <path>${syslogocolor}</path>
+                <default>${syslogocolorcustom}</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -605,7 +622,8 @@
     <variant name="solidvid">
         <view name="system">
             <carousel name="system_carousel">
-                <staticImage>./assets/syslogo/${system.theme}.svg</staticImage>
+                <staticImage>${syslogo}</staticImage>
+                <defaultImage>${syslogocustom}</defaultImage>
                 <imageColor>${secondColor}</imageColor>
                 <imageSelectedColor>${secondColor}</imageSelectedColor>
             </carousel>
@@ -649,7 +667,8 @@
                 <zIndex>20</zIndex>
             </video>
             <image name="Syslogo">
-                <path>./assets/syslogo/${system.theme}.svg</path>
+                <path>${syslogo}</path>
+                <default>${syslogocustom}</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
@@ -661,7 +680,9 @@
     <variant name="colorvid">
         <view name="system">
             <carousel name="system_carousel">
-                <staticImage>./assets/syslogocolor/${system.theme}.svg</staticImage>
+                <staticImage>${syslogocolor}</staticImage>
+                
+                <defaultImage>${syslogocolorcustom}</defaultImage>
             </carousel>
         </view>
         <view name="gamelist">
@@ -702,7 +723,8 @@
             </video>
             
             <image name="Syslogo">
-                <path>./assets/syslogocolor/${system.theme}.svg</path>
+                <path>${syslogocolor}</path>
+                <default>${syslogocolorcustom}</default>
                 <pos>0.5 0.07</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>0.5 0.1</maxSize>
