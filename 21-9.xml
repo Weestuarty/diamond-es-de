@@ -45,4 +45,12 @@
         </view>
     </variant>
 
+    <variant name="solidgridalt, colorgridalt">
+        <view name="gamelist">
+            <grid name="sysgrid">
+                <selectorImage>./assets/images/gridsel219alt.svg</selectorImage>
+            </grid>
+        </view>
+    </variant>
+
 </theme>

@@ -387,6 +387,169 @@
         </view>
     </variant>
 
+    <variant name="solidgridalt">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>${syslogo}</staticImage>
+                
+                <defaultImage>${syslogocustom}</defaultImage>
+                <imageColor>${mainFontColor}AA</imageColor>
+                <imageSelectedColor>${mainFontColor}</imageSelectedColor>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <grid name="sysgrid">
+                <pos>0.01 0.58</pos>
+                <size>0.7 0.81</size>
+                <origin>0 0.5</origin>
+                <itemSize>0.15 0.22</itemSize>
+                <scaleInwards>true</scaleInwards>
+                <itemScale>1.1</itemScale>
+                <imageType>miximage</imageType>
+                <itemSpacing>0.02 0.02</itemSpacing>
+                <selectorImage>./assets/images/gridsel.svg</selectorImage>
+                <selectorColor>${selectColor}</selectorColor>
+                <selectorLayer>bottom</selectorLayer>
+                <zIndex>10</zIndex>
+                <textColor>${mainFontColor}</textColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <rowTransitions>instant</rowTransitions>
+            </grid>
+            <text name="description1">
+                <size>0.25 0.27</size>
+                <metadata>description</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <lineSpacing>1</lineSpacing>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>${mainFontColor}</color>
+                <pos>0.815 0.66</pos>
+                <origin>0.5 0</origin>
+            </text>
+            <image name="Syslogo">
+                <path>${syslogo}</path>
+                <default>${syslogocustom}</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <color>${mainFontColor}</color>
+                <zIndex>50</zIndex>
+            </image>
+             <video name="gamedisplay">
+                <imageType>titlescreen,screenshot,marquee</imageType>
+                <maxSize>0.25 0.38</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.815 0.375</pos>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>20</zIndex>
+            </video>
+            <text name="gamename">
+                <metadata>name</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.025</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <systemNameSuffix>false</systemNameSuffix>
+                <horizontalAlignment>center</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.815 0.61</pos>
+                <size>0.25 0.09</size>
+                <origin>0.5 0.5</origin>
+            </text>
+             <image name="midbar1">
+                <pos>0.6775 0.17</pos>
+                <size>0.003 0.74</size>
+                <origin>0 0</origin>
+                <path>./assets/images/background.png</path>
+                <color>${carColor}66</color>
+                <brightness>2.5</brightness>
+                <tile>false</tile>
+                <zIndex>30</zIndex>
+            </image>
+        </view>
+    </variant>
+    <variant name="colorgridalt">
+        <view name="system">
+            <carousel name="system_carousel">
+                <staticImage>${syslogocolor}</staticImage>
+                
+                <defaultImage>${syslogocolorcustom}</defaultImage>
+                <imageColor>${mainFontColor}AA</imageColor>
+                <imageSelectedColor>${mainFontColor}</imageSelectedColor>
+            </carousel>
+        </view>
+        <view name="gamelist">
+            <grid name="sysgrid">
+                <pos>0.01 0.58</pos>
+                <size>0.7 0.81</size>
+                <origin>0 0.5</origin>
+                <itemSize>0.15 0.22</itemSize>
+                <scaleInwards>true</scaleInwards>
+                <itemScale>1.1</itemScale>
+                <imageType>miximage</imageType>
+                <itemSpacing>0.02 0.02</itemSpacing>
+                <selectorImage>./assets/images/gridsel.svg</selectorImage>
+                <selectorColor>${selectColor}</selectorColor>
+                <selectorLayer>bottom</selectorLayer>
+                <zIndex>10</zIndex>
+                <textColor>${mainFontColor}</textColor>
+                <systemNameSuffix>false</systemNameSuffix>
+                <rowTransitions>instant</rowTransitions>
+            </grid>
+            <text name="description1">
+                <size>0.25 0.27</size>
+                <metadata>description</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.0225</fontSize>
+                <lineSpacing>1</lineSpacing>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>${mainFontColor}</color>
+                <pos>0.815 0.66</pos>
+                <origin>0.5 0</origin>
+            </text>
+            <image name="Syslogo">
+                <path>${syslogocolor}</path>
+                <default>${syslogocolorcustom}</default>
+                <pos>0.5 0.07</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.5 0.1</maxSize>
+                <color>${mainFontColor}</color>
+                <zIndex>50</zIndex>
+            </image>
+             <video name="gamedisplay">
+                <imageType>titlescreen,screenshot,marquee</imageType>
+                <maxSize>0.25 0.38</maxSize>
+                <origin>0.5 0.5</origin>
+                <pos>0.815 0.375</pos>
+                <pillarboxes>false</pillarboxes>
+                <zIndex>20</zIndex>
+            </video>
+            <text name="gamename">
+                <metadata>name</metadata>
+                <fontPath>${mainFont}</fontPath>
+                <fontSize>0.025</fontSize>
+                <color>${mainFontColor}</color>
+                <letterCase>capitalize</letterCase>
+                <systemNameSuffix>false</systemNameSuffix>
+                <horizontalAlignment>center</horizontalAlignment>
+                <lineSpacing>0.95</lineSpacing>
+                <pos>0.815 0.61</pos>
+                <size>0.25 0.09</size>
+                <origin>0.5 0.5</origin>
+            </text>
+             <image name="midbar1">
+                <pos>0.6775 0.17</pos>
+                <size>0.003 0.74</size>
+                <origin>0 0</origin>
+                <path>./assets/images/background.png</path>
+                <color>${carColor}66</color>
+                <brightness>2.5</brightness>
+                <tile>false</tile>
+                <zIndex>30</zIndex>
+            </image>
+        </view>
+    </variant>
+
     <variant name="solidtext">
         <view name="system">
             <carousel name="system_carousel">
