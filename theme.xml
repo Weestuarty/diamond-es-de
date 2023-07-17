@@ -272,7 +272,7 @@
             <defaultValue>:space:</defaultValue>
             <horizontalAlignment>left</horizontalAlignment>
             <lineSpacing>0.95</lineSpacing>
-            <pos>0.98 0.37</pos>
+            <pos>0.98 0.36</pos>
             <size>0.03 0.1</size>
             <origin>0.5 0</origin>
         </text>
@@ -287,12 +287,12 @@
             <letterCase>capitalize</letterCase>
             <horizontalAlignment>left</horizontalAlignment>
             <lineSpacing>0.95</lineSpacing>
-            <pos>0.98 0.9</pos>
-            <size>0.05 0.06</size>
+            <pos>0.98 0.895</pos>
+            <size>0.05 0.04</size>
             <origin>0.5 1</origin>
         </datetime>
         <rating name="rating">
-            <pos>0.9225 0.25</pos>
+            <pos>0.9225 0.24</pos>
             <size>0.08 0.04</size>
             <rotation>-90</rotation>
             <interpolation>nearest</interpolation>
@@ -312,12 +312,12 @@
             <zIndex>50</zIndex>
         </text>
         <badges name="all">
-            <pos>0.9525 0.475</pos>
-            <size>0.05 .35</size>
+            <pos>0.9525 0.465</pos>
+            <size>0.05 .385</size>
             <direction>column</direction>
             <lines>1</lines>
             <itemsPerLine>5</itemsPerLine>
-            <slots>completed, favorite, altemulator, kidgame,controller</slots>
+            <slots>completed, favorite, altemulator, kidgame,controller,manual</slots>
             <controllerPos>0.5 0.575</controllerPos>
             <controllerSize>0.85</controllerSize>
             <folderLinkSize>0.85 0.9</folderLinkSize>
@@ -325,6 +325,7 @@
             <folderLinkIconColor>${backgroundColor}55</folderLinkIconColor>
             <badgeIconColor>${mainFontColor}DD</badgeIconColor>
             <horizontalAlignment>center</horizontalAlignment>
+            <customBadgeIcon badge="manual">./assets/badges/manual.svg</customBadgeIcon>
             <customBadgeIcon badge="kidgame">./assets/badges/kid.svg</customBadgeIcon>
             <customBadgeIcon badge="collection">./assets/badges/collection.svg</customBadgeIcon>
             <customBadgeIcon badge="altemulator">./assets/badges/alt.svg</customBadgeIcon>
