@@ -316,7 +316,7 @@
             <size>0.05 .385</size>
             <direction>column</direction>
             <lines>1</lines>
-            <itemsPerLine>5</itemsPerLine>
+            <itemsPerLine>6</itemsPerLine>
             <slots>completed, favorite, altemulator, kidgame,controller,manual</slots>
             <controllerPos>0.5 0.575</controllerPos>
             <controllerSize>0.85</controllerSize>
