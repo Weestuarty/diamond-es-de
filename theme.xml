@@ -206,6 +206,7 @@
             <size>1 1</size>
             <origin>0.5 0.5</origin>
             <path>./assets/backgrounds/${system.theme}.png</path>
+            <default>./assets/backgrounds/default.png</default>
             <tile>false</tile>
             <interpolation>linear</interpolation>
             <zIndex>1</zIndex>
