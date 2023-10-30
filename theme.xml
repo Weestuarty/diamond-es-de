@@ -9,8 +9,7 @@
     <include>./colors.xml</include>
     <include>./navigationsounds.xml</include>
    <include>./system/metadata/_default.xml</include>
-    <include>./system/custom/metadata/_default.xml</include>
-    <include>./system/custom/metadata/${system.theme}.xml</include>
+   
     <include>./system/metadata/${system.theme}.xml</include>
 
 
