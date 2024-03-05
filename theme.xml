@@ -7,9 +7,11 @@
 <theme>
 
     <include>./colors.xml</include>
+    <include>./font.xml</include>
     <include>./navigationsounds.xml</include>
    <include>./system/metadata/_default.xml</include>
-   
+    <include>./system/custom/metadata/_default.xml</include>
+    <include>./system/custom/metadata/${system.theme}.xml</include>
     <include>./system/metadata/${system.theme}.xml</include>
 
 
@@ -24,14 +26,7 @@
     </aspectRatio>
 
     <variables>
-        <mainFont>./assets/fonts/bold.ttf</mainFont>
-        <mainFontSize>0.025</mainFontSize>
-        <secondFont>./assets/fonts/bold.ttf</secondFont>
-        <helpFont>./assets/fonts/cabin.ttf</helpFont>
-        <sysFont1>./assets/fonts/vanin.otf</sysFont1>
-    
-        <sysFont2>./assets/fonts/vanout.otf</sysFont2>
-        <helpFontSize>0.025</helpFontSize>
+        
         <syslogo>./system/logos/system-logo-white/${system.theme}.svg</syslogo>
         <syslogocustom>./system/custom/logo/${system.theme}.svg</syslogocustom>
         <syslogocolor>./system/logos/system-logo-color/${system.theme}.svg</syslogocolor>
@@ -93,10 +88,10 @@
         <text name="sysname">
             <pos>0.025 0.03</pos>
             <origin>0 0</origin>
-            <size>0.5 0.075</size>
+            <size>0.9 0.075</size>
             <systemdata>fullname</systemdata>
             <fontPath>${sysFont1}</fontPath>
-            <fontSize>0.06</fontSize>
+            <fontSize>${sysnamesize}</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
             <color>${fontColor}</color>
             <zIndex>14</zIndex>
@@ -104,54 +99,54 @@
         <text name="sysname2">
             <pos>0.025 0.03</pos>
             <origin>0 0</origin>
-            <size>0.5 0.075</size>
+            <size>0.9 0.075</size>
             <systemdata>fullname</systemdata>
             <fontPath>${sysFont2}</fontPath>
-            <fontSize>0.06</fontSize>
+            <fontSize>${sysnamesize}</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
             <color>000000</color>
             <zIndex>15</zIndex>
         </text>
         <text name="sysman">
-            <pos>0.025 0.09</pos>
+            <pos>0.025 0.095</pos>
             <origin>0 0</origin>
-            <size>0.5 0.06</size>
+            <size>0.9 0.06</size>
             <text>${systemManufacturer}</text>
             <fontPath>${sysFont1}</fontPath>
-            <fontSize>0.025</fontSize>
+            <fontSize>${sysmeta}</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
             <color>${fontColor}</color>
             <zIndex>14</zIndex>
         </text>
         <text name="sysman2">
-            <pos>0.025 0.09</pos>
+            <pos>0.025 0.095</pos>
             <origin>0 0</origin>
-            <size>0.5 0.06</size>
+            <size>0.9 0.06</size>
             <text>${systemManufacturer}</text>
             <fontPath>${sysFont2}</fontPath>
-            <fontSize>0.025</fontSize>
+            <fontSize>${sysmeta}</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
             <color>000000</color>
             <zIndex>15</zIndex>
         </text>
         <text name="sysrel">
-            <pos>0.025 0.125</pos>
+            <pos>0.025 0.135</pos>
             <origin>0 0</origin>
-            <size>0.5 0.06</size>
+            <size>0.9 0.06</size>
             <text>${systemReleaseYear}</text>
             <fontPath>${sysFont1}</fontPath>
-            <fontSize>0.025</fontSize>
+            <fontSize>${sysmeta}</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
             <color>${fontColor}</color>
             <zIndex>14</zIndex>
         </text>
         <text name="sysrel2">
-            <pos>0.025 0.125</pos>
+            <pos>0.025 0.135</pos>
             <origin>0 0</origin>
-            <size>0.5 0.06</size>
+            <size>0.9 0.06</size>
             <text>${systemReleaseYear}</text>
             <fontPath>${sysFont2}</fontPath>
-            <fontSize>0.025</fontSize>
+            <fontSize>${sysmeta}</fontSize>
             <horizontalAlignment>left</horizontalAlignment>
             <color>000000</color>
             <zIndex>15</zIndex>
@@ -163,7 +158,7 @@
             <systemdata>gamecount</systemdata>
             <defaultValue>:space:</defaultValue>
             <fontPath>${helpFont}</fontPath>
-            <fontSize>0.025</fontSize>
+            <fontSize>${helpFontSize}</fontSize>
             <horizontalAlignment>center</horizontalAlignment>
             <letterCase>uppercase</letterCase>
             <color>${helpColor}</color>
@@ -205,7 +200,6 @@
             <size>1 1</size>
             <origin>0.5 0.5</origin>
             <path>./assets/backgrounds/${system.theme}.png</path>
-            <default>./assets/backgrounds/default.png</default>
             <tile>false</tile>
             <interpolation>linear</interpolation>
             <zIndex>1</zIndex>
@@ -281,14 +275,15 @@
             <fontPath>${mainFont}</fontPath>
             <format>%Y</format>
             <rotation>-90</rotation>
-            <fontSize>0.04</fontSize>
+            <fontSize>${releaseSize}</fontSize>
             <defaultValue>:space:</defaultValue>
             <color>${mainFontColor}</color>
             <letterCase>capitalize</letterCase>
             <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
             <lineSpacing>0.95</lineSpacing>
-            <pos>0.98 0.895</pos>
-            <size>0.05 0.04</size>
+            <pos>0.9775 0.895</pos>
+            <size>0.05 0.08</size>
             <origin>0.5 1</origin>
         </datetime>
         <rating name="rating">
@@ -316,7 +311,7 @@
             <size>0.05 .385</size>
             <direction>column</direction>
             <lines>1</lines>
-            <itemsPerLine>6</itemsPerLine>
+            <itemsPerLine>5</itemsPerLine>
             <slots>completed, favorite, altemulator, kidgame,controller,manual</slots>
             <controllerPos>0.5 0.575</controllerPos>
             <controllerSize>0.85</controllerSize>
@@ -407,7 +402,7 @@
                 <secondaryColor>${mainFontColor}</secondaryColor>
                 <systemNameSuffix>false</systemNameSuffix>
                 <fontPath>${mainFont}</fontPath>
-                <fontSize>0.03</fontSize>
+                <fontSize>${listSize}</fontSize>
                 <horizontalAlignment>left</horizontalAlignment>
                 <horizontalMargin>0</horizontalMargin>
                 <letterCase>uppercase</letterCase>
@@ -418,7 +413,7 @@
                 <size>0.41 0.2</size>
                 <metadata>description</metadata>
                 <fontPath>${mainFont}</fontPath>
-                <fontSize>0.0225</fontSize>
+                <fontSize>${descSize}</fontSize>
                 <lineSpacing>1</lineSpacing>
                 <verticalAlignment>bottom</verticalAlignment>
                 <color>${mainFontColor}</color>
@@ -548,7 +543,7 @@
                 <secondaryColor>${mainFontColor}</secondaryColor>
                 <systemNameSuffix>false</systemNameSuffix>
                 <fontPath>${mainFont}</fontPath>
-                <fontSize>0.03</fontSize>
+                <fontSize>${listSize}</fontSize>
                 <horizontalAlignment>left</horizontalAlignment>
                 <horizontalMargin>0</horizontalMargin>
                 <letterCase>uppercase</letterCase>
@@ -559,7 +554,7 @@
                 <size>0.41 0.2</size>
                 <metadata>description</metadata>
                 <fontPath>${mainFont}</fontPath>
-                <fontSize>0.0225</fontSize>
+                <fontSize>${descSize}</fontSize>
                 <lineSpacing>1</lineSpacing>
                 <verticalAlignment>bottom</verticalAlignment>
                 <color>${mainFontColor}</color>
@@ -640,7 +635,7 @@
                 <secondaryColor>${mainFontColor}</secondaryColor>
                 <systemNameSuffix>false</systemNameSuffix>
                 <fontPath>${mainFont}</fontPath>
-                <fontSize>0.03</fontSize>
+                <fontSize>${listSize}</fontSize>
                 <horizontalAlignment>left</horizontalAlignment>
                 <horizontalMargin>0</horizontalMargin>
                 <letterCase>uppercase</letterCase>
@@ -696,7 +691,7 @@
                 <secondaryColor>${mainFontColor}</secondaryColor>
                 <systemNameSuffix>false</systemNameSuffix>
                 <fontPath>${mainFont}</fontPath>
-                <fontSize>0.03</fontSize>
+                <fontSize>${listSize}</fontSize>
                 <horizontalAlignment>left</horizontalAlignment>
                 <horizontalMargin>0</horizontalMargin>
                 <letterCase>uppercase</letterCase>

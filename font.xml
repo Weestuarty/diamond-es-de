@@ -1,0 +1,52 @@
+<theme>
+
+    <variables>
+        <mainFont>./assets/fonts/bold.ttf</mainFont>
+        
+        <secondFont>./assets/fonts/bold.ttf</secondFont>
+        <helpFont>./assets/fonts/cabin.ttf</helpFont>
+        <sysFont1>./assets/fonts/vanin.otf</sysFont1>
+        <sysFont2>./assets/fonts/vanout.otf</sysFont2>
+        
+
+    </variables>
+
+
+        <fontSize name="medium">
+            <variables>
+                <mainFontSize>0.025</mainFontSize>
+                <helpFontSize>0.025</helpFontSize>
+                <sysnamesize>0.06</sysnamesize>
+                <sysmeta>0.035</sysmeta>
+                <descSize>0.031</descSize>
+                <releaseSize>0.04</releaseSize>
+                <listSize>0.03</listSize>
+            </variables>
+        </fontSize>
+        <fontSize name="large">
+            <variables>
+                <mainFontSize>0.025</mainFontSize>
+                <helpFontSize>0.03</helpFontSize>
+                
+                <sysnamesize>0.07</sysnamesize>
+                <sysmeta>0.0425</sysmeta>
+                <descSize>0.039</descSize>
+                <releaseSize>0.045</releaseSize>
+                <listSize>0.04</listSize>
+            </variables>
+        </fontSize>
+
+        <fontSize name="x-large">
+            <variables>
+                <mainFontSize>0.025</mainFontSize>
+                <helpFontSize>0.035</helpFontSize>
+                
+                <sysnamesize>0.08</sysnamesize>
+                <sysmeta>0.05</sysmeta>
+                <descSize>0.049</descSize>
+                <releaseSize>0.05</releaseSize>
+                <listSize>0.05</listSize>
+            </variables>
+        </fontSize>
+   
+</theme>
