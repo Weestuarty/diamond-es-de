@@ -151,6 +151,32 @@
             <color>000000</color>
             <zIndex>15</zIndex>
         </text>
+        <text name="sysdesc">
+            <pos>0.025 0.205</pos>
+            <origin>0 0</origin>
+            <size>0.9 0.15</size>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <fontPath>${sysFont1}</fontPath>
+            <fontSize>${sysmeta}</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <color>${fontColor}</color>
+            <zIndex>14</zIndex>
+        </text>
+        <text name="sysdesc2">
+            <pos>0.025 0.205</pos>
+            <origin>0 0</origin>
+            <size>0.9 0.15</size>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <fontPath>${sysFont2}</fontPath>
+            <fontSize>${sysmeta}</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>top</verticalAlignment>
+            <color>000000</color>
+            <zIndex>15</zIndex>
+        </text>
         <text name="gamecount">
             <pos>0.95 0.965</pos>
             <origin>1 0.5</origin>
